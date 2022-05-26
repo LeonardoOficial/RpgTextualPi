@@ -250,7 +250,7 @@ public class RpgPrincipal {
                 break;
 
         }
-        // historia do bar
+        // DESAFIO DO BAR
 
         int avatar = 0;
         int donoDoBar = 0;
@@ -418,7 +418,7 @@ public class RpgPrincipal {
             carisma = carisma - 10;
         }
 
-        // desafio do paradeiro do premio
+        // DESAFIO DO PARADEIRO DO PRÊMIO
         int npc, ladrao;
 
         System.out.println("Você desmaiou, acabou acordando no bar.\n");

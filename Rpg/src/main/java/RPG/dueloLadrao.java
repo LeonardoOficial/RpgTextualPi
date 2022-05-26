@@ -19,15 +19,15 @@ public class dueloLadrao {
 
             switch (Anna.habilidades()) {
                 case 1:
-                    System.out.println("Anna esfaqueou o ladrão");
+                    System.out.println("Anna esfaqueou o Ladrão!");
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Anna acertou o ladrão com uma flecha");
+                    System.out.println("Anna acertou o Ladrão com uma flecha!");
                     hpInimigo -= 12;
                     break;
                 case 3:
-                    System.out.println("Anna atingiu o ladrão com uma dupla flechada");
+                    System.out.println("O Ladrão foi atingido pelas flechas de Anna!");
                     hpInimigo -= 15;
                     break;
                 default:
@@ -36,11 +36,11 @@ public class dueloLadrao {
             }
                  switch (Ladrao.habilidades()) {
                     case 1:
-                        System.out.println("Ladrão aplicou um soco!");
+                        System.out.println("O Ladrão te meteu a porrada!");
                         hpAnna -= 10;
                         break;
                     case 2:
-                        System.out.println("Ladrão deu um triplo bye bye bird!");
+                        System.out.println("O Ladrão enfiou a faca no teu bucho!");
                         hpAnna -= 12;
                         break;
                 }
@@ -63,15 +63,15 @@ public class dueloLadrao {
 
             switch (Floki.habilidades()) {
                 case 1:
-                    System.out.println("O ladrão caiu com os tremores causados por Floki");
+                    System.out.println("O Ladrão caiu com os tremores causados por Floki!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Floki deu uma machadada no ladrão");
+                    System.out.println("Floki deu uma machadada no Ladrão!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("Floki ganhou mais força");
+                    System.out.println("Floki recuperou uma parte da vida!");
                     hpFloki += 10;
                     break;
                 default:
@@ -80,11 +80,11 @@ public class dueloLadrao {
             }
                  switch (Ladrao.habilidades()) {
                     case 1:
-                        System.out.println("Ladrão aplicou um soco!");
+                        System.out.println("O Ladrão te meteu a porrada!");
                         hpFloki -= 10;
                         break;
                     case 2:
-                        System.out.println("Ladrão deu um triplo bye bye bird!");
+                        System.out.println("O Ladrão enfiou a faca no teu bucho!");
                         hpFloki -= 12;
                         break;
                 }
@@ -107,15 +107,15 @@ public class dueloLadrao {
 
             switch (Halroc.habilidades()) {
                 case 1:
-                    System.out.println("Halroc deu um corte rápido no ladrão");
+                    System.out.println("Halroc deu um corte rápido no Ladrão!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Halroc deu um corte sombrio no ladrão");
+                    System.out.println("Halroc deu um corte sombrio no Ladrão!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("Você deu um ponta pé no ladrão");
+                    System.out.println("O Ladrão é ferido pela explosão da bomba!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -124,11 +124,11 @@ public class dueloLadrao {
             }
                  switch (Ladrao.habilidades()) {
                     case 1:
-                        System.out.println("Ladrão aplicou um soco!");
+                        System.out.println("O Ladrão te meteu a porrada!");
                         hpHalroc -= 10;
                         break;
                     case 2:
-                        System.out.println("Ladrão deu um triplo bye bye bird!");
+                        System.out.println("O Ladrão enfiou a faca no teu bucho!");
                         hpHalroc -= 12;
                         break;
                 }
@@ -150,15 +150,15 @@ public class dueloLadrao {
 
             switch (Yruan.habilidades()) {
                 case 1:
-                    System.out.println("Yruan eletrificou o ladrão");
+                    System.out.println("O Ladrão foi eletrificado!");
                     hpInimigo -= 15;
                     break;
                 case 2:
-                    System.out.println("Yruan acertou um raio no ladrão");
+                    System.out.println("O Ladrão foi atingido por Yruan!");
                     hpInimigo -= 20;
                     break;
                 case 3:
-                    System.out.println("Yruan deu um ponta pé no ladrão");
+                    System.out.println("Yruan golpeia o Ladrão!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -167,11 +167,11 @@ public class dueloLadrao {
             }
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("Ladrão aplicou um soco!");
+                        System.out.println("O Ladrão te meteu a porrada!");
                         hpYruan -= 10;
                         break;
                     case 2:
-                        System.out.println("Ladrão deu um triplo bye bye bird!");
+                        System.out.println("O Ladrão enfiou a faca no teu bucho!");
                         hpYruan -= 12;
                         break;
                 }
@@ -194,15 +194,15 @@ public class dueloLadrao {
 
             switch (Yvenna.habilidades()) {
                 case 1:
-                    System.out.println("Você atingiu o ladrão com a sua lança");
+                    System.out.println("O Ladrão foi atingido pela pedra!");
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Você deu um soco duplo e o ladrão foi parar no chão");
+                    System.out.println("Yvenna corta o Ladrão com sua lança!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("Você deu um ponta pé");
+                    System.out.println("O Ladrão é atingido pelos espinhos!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -211,11 +211,11 @@ public class dueloLadrao {
             }
                  switch (Ladrao.habilidades()) {
                     case 1:
-                        System.out.println("Ladrão aplicou um soco!");
+                        System.out.println("O Ladrão te meteu a porrada!");
                         hpYvenna -= 10;
                         break;
                     case 2:
-                        System.out.println("Ladrão deu um triplo bye bye bird!");
+                        System.out.println("O Ladrão enfiou a faca no teu bucho!");
                         hpYvenna -= 12;
                         break;
                 }

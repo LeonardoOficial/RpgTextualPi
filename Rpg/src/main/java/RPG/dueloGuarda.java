@@ -20,15 +20,15 @@ public class dueloGuarda {
 
             switch (Anna.habilidades()) {
                 case 1:
-                    System.out.println("Anna esfaqueou o guarda");
+                    System.out.println("Anna esfaqueou o Guarda");
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Anna acertou o guarda com uma flecha");
+                    System.out.println("Anna acertou o Guarda com uma flecha");
                     hpInimigo -= 12;
                     break;
                 case 3:
-                    System.out.println("Anna atingiu o guarda com uma dupla flechada");
+                    System.out.println("O Guarda foi atingido pelas flechas de Anna!");
                     hpInimigo -= 15;
                     break;
                 default:
@@ -39,11 +39,11 @@ public class dueloGuarda {
 
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("Guarda aplicou um soco!");
+                        System.out.println("O Guarda te acertou um soco!");
                         hpAnna -= 10;
                         break;
                     case 2:
-                        System.out.println("Guarda deu um triplo bye bye bird!");
+                        System.out.println("O Guarda deu um triplo bye bye bird!");
                         hpAnna -= 12;
                         break;
                 }
@@ -68,15 +68,15 @@ public class dueloGuarda {
 
             switch (Floki.habilidades()) {
                 case 1:
-                    System.out.println("O guarda caiu com os tremores causados por Floki");
+                    System.out.println("O Guarda caiu com os tremores causados por Floki!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Floki deu uma machadada no guarda");
+                    System.out.println("Floki deu uma machadada no Guarda!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("Floki ganhou mais força");
+                    System.out.println("Floki recuperou parte da vida!");
                     hpFloki += 10;
                     break;
                 default:
@@ -87,11 +87,11 @@ public class dueloGuarda {
 
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("Guarda aplicou um soco!");
+                        System.out.println("O Guarda te acertou um soco!");
                         hpFloki -= 10;
                         break;
                     case 2:
-                        System.out.println("Guarda deu um triplo bye bye bird!");
+                        System.out.println("O Guarda deu um triplo bye bye bird!");
                         hpFloki -= 12;
                         break;
                 }
@@ -116,15 +116,15 @@ public class dueloGuarda {
 
             switch (Halroc.habilidades()) {
                 case 1:
-                    System.out.println("Halroc deu um corte rápido no guarda");
+                    System.out.println("Halroc deu um corte rápido no Guarda!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Halroc deu um corte sombrio no guarda");
+                    System.out.println("Halroc deu um corte sombrio no Guarda!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("Você deu um ponta pé no guarda");
+                    System.out.println("O Guarda é ferido pela explosão da bomba!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -135,11 +135,11 @@ public class dueloGuarda {
 
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("Guarda aplicou um soco!");
+                        System.out.println("O Guarda te acertou um soco!");
                         hpHalroc -= 10;
                         break;
                     case 2:
-                        System.out.println("Guarda deu um triplo bye bye bird!");
+                        System.out.println("O Guarda deu um triplo bye bye bird!");
                         hpHalroc -= 12;
                         break;
                 }
@@ -164,15 +164,15 @@ public class dueloGuarda {
 
             switch (Yruan.habilidades()) {
                 case 1:
-                    System.out.println("Yruan eletrificou o guarda");
+                    System.out.println("O Guarda foi eletrificado!");
                     hpInimigo -= 15;
                     break;
                 case 2:
-                    System.out.println("Yruan acertou um raio no guarda");
+                    System.out.println("O Guarda foi antigido por Yruan!");
                     hpInimigo -= 20;
                     break;
                 case 3:
-                    System.out.println("Yruan deu um ponta pé no guarda");
+                    System.out.println("Yruan golpeia o Guarda!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -183,11 +183,11 @@ public class dueloGuarda {
 
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("Guarda aplicou um soco!");
+                        System.out.println("O Guarda te acertou um soco!");
                         hpYruan -= 10;
                         break;
                     case 2:
-                        System.out.println("Guarda deu um triplo bye bye bird!");
+                        System.out.println("O Guarda deu um triplo bye bye bird!");
                         hpYruan -= 12;
                         break;
                 }
@@ -212,15 +212,15 @@ public class dueloGuarda {
 
             switch (Yvenna.habilidades()) {
                 case 1:
-                    System.out.println("Você atingiu o guarda com a sua lança");
+                    System.out.println("O Guarda foi acertado pela pedra!");
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Você deu um soco duplo e o guarda foi parar no chão");
+                    System.out.println("Yvenna corta o Guarda com sua lança!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("Você deu um ponta pé");
+                    System.out.println("O Guarda é atingido pelos espinhos!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -231,11 +231,11 @@ public class dueloGuarda {
 
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("Guarda aplicou um soco!");
+                        System.out.println("O Guarda te acertou um soco!");
                         hpYvenna -= 10;
                         break;
                     case 2:
-                        System.out.println("Guarda deu um triplo bye bye bird!");
+                        System.out.println("O Guarda deu um triplo bye bye bird!");
                         hpYvenna -= 12;
                         break;
                 }

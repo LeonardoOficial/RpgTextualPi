@@ -29,9 +29,9 @@ import java.util.Scanner;
     static int habilidades() {
         Scanner input = new Scanner(System.in);
         System.out.println("~~ HABILIDADES ~~");
-        System.out.println("1 - Esfaqueie seu inimigo");
-        System.out.println("2 - Atire uma flecha no inimigo");
-        System.out.println("3 - Dê uma dupla flechada no inimigo");
+        System.out.println("1 - Esfaquear: Anna empunha sua lâmina cuta e esfaqueia um inimigo");
+        System.out.println("2 - Flecha de Precisão: Anna ergue seu arco e acerta uma flecha no inimigo");
+        System.out.println("3 - Barragem: Atira uma saraivada de flechas em um oponente");
         return input.nextInt();
     }
 }
@@ -50,9 +50,9 @@ class Floki {
     public static int habilidades() {
         Scanner input = new Scanner(System.in);
         System.out.println("~~ HABILIDADES ~~");
-        System.out.println("1 - Dê um soco no chão, para causar tremores");
-        System.out.println("2 - Ataque o guarda com o seu machado");
-        System.out.println("3 - Não ataque, fortifique-se");
+        System.out.println("1 - Terremoto: Golpeia o chão fortemente com seus machados, criando tremores");
+        System.out.println("2 - Avançar: Ataque um inimigo com seus machados");
+        System.out.println("3 - Recuperar: Recupera uma parte da sua vida máxima");
         return input.nextInt();
     }
 }
@@ -70,9 +70,9 @@ class Halroc {
     public static int habilidades() {
         Scanner input = new Scanner(System.in);
         System.out.println("~~ HABILIDADES ~~");
-        System.out.println("1 - Corte rápido");
-        System.out.println("2 - Corte sombrio");
-        System.out.println("3 - Dê um ponta pé");
+        System.out.println("1 - Corte Rápido: Aparece nas costas do oponente, cortando-o rapidamente e voltando a sua posição");
+        System.out.println("2 - Corte Sombrio: Faz um corte no ar, interligando-o a um inimigo e o acertando");
+        System.out.println("3 - Surpresa!!: Lança uma bomba no pé de um inimigo");
         return input.nextInt();
     }
 }
@@ -93,9 +93,9 @@ class Yruan {
     public static int habilidades() {
         Scanner input = new Scanner(System.in);
         System.out.println("~~ HABILIDADES ~~");
-        System.out.println("1 - Eletrifique o inimigo");
-        System.out.println("2 - Faça uma tempestade cair em cima do inimigo");
-        System.out.println("3 - Dê um ponta pé");
+        System.out.println("1 - Alta Voltagem: Acerta um inimigo com o choque do seu anel");
+        System.out.println("2 - Para-Raio: Ora a Thorys, fazendo com que caia um raio do céu no inimigo");
+        System.out.println("3 - Imparável: Infunde seu corpo com energia e vai até o inimigo golpeá-lo");
         return input.nextInt();
     }
 }
@@ -114,9 +114,9 @@ class Yvenna {
     public static int habilidades() {
         Scanner input = new Scanner(System.in);
         System.out.println("~~ HABILIDADES ~~");
-        System.out.println("1 - Atinja o inimigo com a sua lança");
-        System.out.println("2 - Dê uma soco duplo e o derrube no chão");
-        System.out.println("3 - Dê um ponta pé");
+        System.out.println("1 - Pedregulho: Levita um pedregulho e o lança a um oponente");
+        System.out.println("2 - Lanceira: Avança até um inimigo e o acerta com sua lança");
+        System.out.println("3 - Espinhos: Faz nascer alguns espinhos no chão");
         return input.nextInt();
     }
 
@@ -134,9 +134,6 @@ class Javali {
 
     public static int habilidades() {
         Random gera = new Random();
-        System.out.println("~~ HABILIDADES ~~");
-        System.out.println("1 - Atinja ele com a sua lança");
-        System.out.println("2 - Soco");
         return gera.nextInt(2) + 1;
     }
 }
@@ -145,7 +142,7 @@ class Ladrao {
 
     public static int habilidades() {
         Random gera = new Random();
-         return gera.nextInt(2) + 1;
+        return gera.nextInt(2) + 1;
 
     }
 }
