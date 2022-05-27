@@ -48,7 +48,7 @@ public class RpgPrincipal {
 
             System.out.print("=============================\n");
             System.out.print("          [1] JOGAR          \n");
-            System.out.print("          [2] CREDITOS       \n");
+            System.out.print("          [2] CRÉDITOS       \n");
             System.out.print("          [3] COMANDOS       \n");
             System.out.print("=============================\n\n\n");
             System.out.println("Digite uma opção: ");
@@ -59,7 +59,7 @@ public class RpgPrincipal {
 
                     System.out.println("Gostaria de iniciar");
                     System.out.println("[1] - SIM");
-                    System.out.println("[2] - NAO");
+                    System.out.println("[2] - NÃO");
                     menu = input.nextInt();
                     if (menu == 1) {
                         System.out.println("Iniciando o Jogo\n \n");
@@ -78,7 +78,7 @@ public class RpgPrincipal {
 
                     System.out.println("Quer voltar ao menu do jogo?");
 
-                    System.out.println("[1] - NAO, Você ira para o jogo diretamente.");
+                    System.out.println("[1] - NÃO, Você irá para o jogo diretamente.");
                     System.out.println("[2] - SIM");
 
                     menu = input.nextInt();
@@ -250,8 +250,11 @@ public class RpgPrincipal {
                 break;
 
         }
-        // DESAFIO DO BAR
-
+        // historia do bar
+System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter vencido a luta e ganhado o prêmio!\n"
+        + name + ": Acho melhor não, estou aqui por motivos maiores, não posso perder o foco!\n"
+                + "[DESCONHECIDO - ] Vamos! Vai ser bom para conhecer a cidade e os moradores\n"
+                + name +": Tudo bem! pensando desta forma, vai ser bom para me familiarizar\n");
         int avatar = 0;
         int donoDoBar = 0;
 
@@ -418,8 +421,17 @@ public class RpgPrincipal {
             carisma = carisma - 10;
         }
 
-        // DESAFIO DO PARADEIRO DO PRÊMIO
+        // desafio do paradeiro do premio
+        System.out.println(name +": É, realmente foi muito bom ter ido a taberna!\n"
+                + "[DESCONHECIDO -]"+name+ ", vou embora! já está tarde!\n"
+                        + "você quer ir?\n"
+                        + name + ": Não, vou ficar! até mais!\n"
+                                + "O tempo passou, "+name+" ficou no bar\n"
+                                        + "acabará dormindo lá mesmo...");
         int npc, ladrao;
+        
+        
+        
 
         System.out.println("Você desmaiou, acabou acordando no bar.\n");
 
@@ -497,7 +509,10 @@ public class RpgPrincipal {
                     dueloLadrao.dueloYvenna(60, 150);
                     break;
             }
-        System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Levenham ");
+        System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+        
+        
+        
 
         int escolha1, escolha2;
         String charada;
