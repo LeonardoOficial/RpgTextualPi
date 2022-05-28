@@ -230,7 +230,7 @@ public class RpgPrincipal {
                 System.out.println("[2] - Nao");
                 escolha = input.nextInt();
                 if (escolha == 1) {
-                    System.out.println("Seu atual nivel de Carisma com a cidade e´: " + carisma);
+                    System.out.println("Seu atual nivel de Carisma com a cidade é: " + carisma);
                     break;
                 } else if (escolha == 2) {
                     break;
@@ -251,9 +251,9 @@ public class RpgPrincipal {
 
         }
         // historia do bar
-System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter vencido a luta e ganhado o prêmio!\n"
+System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter vencido a luta contra aquela fera!\n"
         + name + ": Acho melhor não, estou aqui por motivos maiores, não posso perder o foco!\n"
-                + "[DESCONHECIDO - ] Vamos! Vai ser bom para conhecer a cidade e os moradores\n"
+                + "[Aliado do Rei - ] Vamos! Vai ser bom para conhecer a cidade e os moradores\n"
                 + name +": Tudo bem! pensando desta forma, vai ser bom para me familiarizar\n");
         int avatar = 0;
         int donoDoBar = 0;
@@ -262,12 +262,15 @@ System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter v
         System.out.println("[Dono do Taverna] - Olá aventureiro(a)!");
         System.out.println("[Dono do Taverna] - Fiquei sabendo que você matou o javali flamejante que estava atormentando as os campos de plantação da cidade, "
                 + "falo por todos da cidade que a partir de agora você será bem-vindo em Lavenham, como agradecimento venha tomar uma bebida ruim e barata com a gente!");
-        System.out.println(".\n.\n.\n");
-        System.out.println("*--Algum tempo se passou dentro da taverna--*");
+        System.out.println(".\n.\n.");
+        System.out.println("*--Algum tempo se passou dentro da taverna--*\n");
+        
         System.out.println("[Dono do Taverna] - Te proponho um desafio para ver se você é melhor que eu na cachaça, o desafio será da seguinte forma:");
-        System.out.println("[Dono do Taverna] - Eu irei fazer uma pergunta, se você responder de forma correta, eu tomo um gole de rum, se você errar, você que irá beber");
+        System.out.println("[Dono do Taverna] - Eu irei fazer uma pergunta, se você responder de forma correta, eu tomo um gole de rum, se você errar, você que irá beber\n");
+        
         System.out.println("(" + name + "): Sim, eu aceito!, mas fique sabendo que você vai tomar na jabiroca");
-        System.out.println("(" + name + "): Sou campeã(o) em tomar cachaça");
+        System.out.println("(" + name + "): Sou campeã(o) em tomar cachaça\n");
+        
         System.out.println("[Dono do Taverna] - Seu pai, aquele cacacheiro, HAHAHA!");
         System.out.println("[Dono do Taverna] - Então vamos começar!");
         System.out.println("[Dono da Taverna] - Primeira pergunta, valendo um gole da minha cachaça");
@@ -334,7 +337,9 @@ System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter v
                 + "c) Diogo Vergueira\n"
                 + "d) Pastilha do Coral\n"
                 + "e) Recife Delá");
-        System.out.println("(" + name + "): Mas peraí, quem é Guernica?");
+        System.out.println("(" + name + "): Mas peraí, quem é Guernica?\n");
+        System.out.println("[Dono do Bar] - Só responda logo!\n");
+        System.out.println("(" + name + "): Ta bom véi.");
         String pf = input.next();
         switch (pf) {
             case "A":
@@ -347,20 +352,24 @@ System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter v
             case "d":
             case "E":
             case "e":
+                
                 System.out.println("\n[Dono da Taverna] - Errou mentecapto, não tem resposta certa!");
                 System.out.println("[Dono da Taverna] - Esse era só pra ver se era bom mesmo");
                 break;
+            default:
+                System.out.println("\n[Dono da Taverna] - Errou mentecapto, não tem resposta certa!");
+                System.out.println("[Dono da Taverna] - Esse era só pra ver se era bom mesmo");
 
         }
         System.out.println("\n\n[Dono do Bar] - Pergunta de número 3:");
         System.out.println("[Dono do Bar] - Valendo 4 goles de cachaça!!!");
-        System.out.println("[Dono do Bar] - O pai de Bodvar tem 5 filhos, eles são: Dez, Vinte, Trinta, Quarenta");
-        System.out.println("E qual é o nome do quinto filho?\n\n");
+        System.out.println("[Dono do Bar] - O pai de Bodvar tem 5 filhos, eles são: Dez, Vinte, Trinta, Quarenta.");
+        System.out.println("E qual é o nome do quinto filho?\n");
         String resposta = input.next();
         switch (resposta) {
             case "Bodvar":
             case "bodvar":
-                System.out.println("\n[Dono do Bar] - Você está se achando, mas mesmo assim você ganhou!");
+                System.out.println("\n[Dono do Bar] - Que onda é essa? você ganhou! Mas, você está se achando demais, quero ver a proxima perguta voce acertar ");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma três goles de sua cachaça--*");
                 System.out.println("[Dono do Bar] - Eita cana braba da peste!!");
                 donoDoBar = donoDoBar + 3;
@@ -376,40 +385,56 @@ System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter v
         System.out.println("[Dono do Bar] - Em que lugar você fica?");
         System.out.println("a) Terceiro\n"
                 + "b) Quarto\n"
-                + "c)Segundo\n"
-                + "d)Primeiro");
+                + "c) Segundo\n"
+                + "d) Primeiro");
         String enigma = input.next();
         switch (enigma) {
+            case "b":
+            case "B":
             case "quarto":
             case "Quarto":
             case "Quarto Lugar":
             case "quarto Lugar":
             case "quarto lugar":
             case "Quarto lugar":
-                System.out.println("Bateu uma saudade dela");
-                System.out.println("Só falta mais uma hein!!");
+                System.out.println("[Dono do Bar] - EiiTAAA! Bateu uma saudade dela!\n");
+                System.out.println("(" + name + "): De quem ? \n");
+                System.out.println("[DOno do bar] - Isqueçe BAHAHAHA");
+                System.out.println("{Dono do Bar] - Só falta mais uma hein!!");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma quatro goles de sua cachaça--*");
                 donoDoBar = donoDoBar + 4;
             default:
-                System.out.println("(" + name + "): Desce mais uma que essa desceu lisa!");
-                System.out.println("*--" + name + " toma mais 4 goles da cachaça--*");
+                 System.out.println("*--" + name + " toma mais 4 goles da cachaça--*");
+                System.out.println("(" + name + "):- Aaahhh, Desce mais não que essas desçeram rasgando!");
                 avatar = avatar + 4;
+               break;
         }
         System.out.println("[Dono do Bar] - Ultima pergunta:");
         System.out.println("[Dono do Bar] - Um cara chegou no meu bar e deixou um papel com diversos números em continuação:");
         System.out.println("*--1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233... 610,987...--*");
-        System.out.println("[Dono do Bar] - Vamos ver se você entende também");
+        System.out.println("[Dono do Bar] - Vamos ver se você entende essa sequencia");
         System.out.println("[Dono do Bar] - Qual é o oitavo número depois do 987?");
-        System.out.println("*--Obs: Ao escrever não utilize vírgula e nem ponto--*");
-        int numero = input.nextInt();
+        System.out.println("A)32.678\n"
+                + "B) 47.526\n"
+                + "C) 46.368\n"
+                + "D) 57.943\n");
+        String numero = input.next();
         switch (numero) {
-            case 46368:
+            case "46368":
+            case "46.368":
+            case "46,368":
+            case "c":
+            case "C":
+                
                 System.out.println("[Dono do Bar] - Você é bom mesmo");
                 System.out.println("[Dono do Bar] - Olokinho meu!!");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma cinco goles de sua cachaça--*");
                 donoDoBar = donoDoBar + 5;
             default:
-                System.out.println("*--" + name + " toma mais 5 goles da cachaça--*");
+                System.out.println("[Dono do Bar] - Poxa meu nobre, isso foi facil demais! só não entende quem não quer!\n"
+                        + "[Dono do bar] - Quem deixou isso aqui foi um tal de Fibonacci\n");
+                System.out.println("*--" + name + " toma mais 5 goles da cachaça--*\n");
+                System.out.println("(" + name + "):- OnDe É qui eu to? da Onde veio esaa mizera");
                 avatar = avatar + 5;
                 break;
         }
@@ -629,6 +654,26 @@ System.out.println("[DESCONHECIDO - ] Vamos a taberna! comemorar por você ter v
                 + ".\n"
                 + ".\n");
 
+        //Parte da historia para conectar as historias!
+        System.out.println("Luta com astaroth");
+        
+        switch(name){
+             case "Anna":
+                    dueloFinal.dueloAnna(60, 150);
+                    break;
+                case "Floki":
+                    dueloFinal.dueloFloki(60, 150);
+                    break;
+                case "Harolc":
+                    dueloFinal.dueloHalroc(60, 150);
+                    break;
+                case "Yruan":
+                    dueloFinal.dueloYruan(60, 150);
+                    break;
+                case "Yvenna":
+                    dueloFinal.dueloYvenna(60, 150);
+                    break;
+        }
     }
 }
 

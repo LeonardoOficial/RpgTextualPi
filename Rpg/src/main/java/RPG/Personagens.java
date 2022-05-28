@@ -146,3 +146,9 @@ class Ladrao {
 
     }
 }
+class Astaroth{
+    public static int habilidades(){
+        Random gera = new Random();
+        return gera.nextInt(2)+1;
+    }
+}
