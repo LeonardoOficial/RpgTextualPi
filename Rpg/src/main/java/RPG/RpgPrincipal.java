@@ -1,4 +1,3 @@
-
 package RPG;
 
 import java.util.Scanner;
@@ -10,7 +9,8 @@ public class RpgPrincipal {
 
         Scanner input = new Scanner(System.in);
 
-        int escolha = 0, opcao, menu = 0, personagem;
+        int escolha = 0, opcao, menu = 0;
+        String personagem;
         int carisma = 10;
         String name = null;
 
@@ -111,10 +111,13 @@ public class RpgPrincipal {
             System.out.println("[3] Halroc Christoper");
             System.out.println("[4] Yruan");
             System.out.println("[5] Yvenna Kallamara");
-            personagem = input.nextInt();
+            personagem = input.next();
 
             switch (personagem) {
-                case 1:
+                case "1":
+                case "Anna":
+                case "anna":
+                case "ANNA":
                     Anna.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
                     System.out.println("[1] - SIM");
@@ -129,7 +132,10 @@ public class RpgPrincipal {
                     }
                     break;
 
-                case 2:
+                case "2":
+                case "floki":
+                case "Floki":
+                case "FLOKI":
                     Floki.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
                     System.out.println("[1] - SIM");
@@ -144,7 +150,10 @@ public class RpgPrincipal {
                     }
                     break;
 
-                case 3:
+                case "3":
+                case "Halroc":
+                case "HALROC":
+                case "halroc":
                     Halroc.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
                     System.out.println("[1] - SIM");
@@ -158,7 +167,11 @@ public class RpgPrincipal {
                     }
                     break;
 
-                case 4:
+                case "4":
+                case "Yruan":
+                case "yruan":
+                case "YRUAN":
+                    
                    Yruan.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
                     System.out.println("[1] - SIM");
@@ -172,7 +185,10 @@ public class RpgPrincipal {
                     }
                     break;
 
-                case 5:
+                case "5":
+                case "Yvenna":
+                case "yvenna":
+                case "YVENNA":
                     Yvenna.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
                     System.out.println("[1] - SIM");
@@ -189,8 +205,7 @@ public class RpgPrincipal {
 
         } while (escolha != 1);
         
-        
-
+  
         System.out.println(name + " está no centro da cidade, onde se tem um vasto comércio de objetos artesanais, uma praça pública em frente a igreja e a 3km de distância tem o castelo do rei Gerald IV, ");
         System.out.println("onde tem uma imensa muralha, torres vigiadas o dia inteiro para a proteção do rei, familiares e de seu tesouro e no fundo do castelo tem ");
         System.out.println("o calabouço. Do lado leste à 5km está localizado a cidade dos anões, chamada de Yggdrasil, à norte a floresta de Dean, lá vive criaturas mágicas, do lado noroeste de ");
@@ -540,6 +555,9 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
         switch (p1) {
             case "A":
             case "a":
+            case "Legenda":
+            case "legenda":
+            case "LEGENDA":
                 System.out.println("\n[Dono da Taverna] - Resposta errada!, beba um gole!");
                 System.out.println("*--" + name + " toma um gole da cachaça--*");
                 avatar = avatar + 1;
@@ -549,6 +567,9 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 break;
             case "B":
             case "b":
+            case "Conto":
+            case "conto":
+            case "CONTO":
                 System.out.println("\n[Dono da Taverna] - Resposta errada!, beba um gole!");
                 System.out.println("*--" + name + " toma um gole da cachaça--*");
                 avatar = avatar + 1;
@@ -558,6 +579,12 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 break;
             case "C":
             case "c":
+            case "História":
+            case "história":
+            case "Historia":
+            case "historia":
+            case "HISTÓRIA":
+            case "HISTORIA":
                 System.out.println("\n[Dono da Taverna] - Resposta errada!, beba um gole!");
                 System.out.println("*--" + name + " toma um gole da cachaça--*");
                 avatar = avatar + 1;
@@ -567,6 +594,9 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 break;
             case "D":
             case "d":
+            case "Lenda":
+            case "lenda":
+            case "LENDA":
                 System.out.println("\n[Dono da Taverna] - Resposta certa!");
                 System.out.println("[Dono da Taverna] - Você parece ser profissional mesmo");
                 System.out.println("*-- Dono do Bar toma um gole da cachaça--*");
@@ -577,6 +607,12 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 break;
             case "E":
             case "e":
+            case "Legendário":
+            case "legendário":
+            case "Legendario":
+            case "legendario":
+            case "LEGENDÁRIO":
+            case "LEGENDARIO":
                 System.out.println("\n[Dono da Taverna] - Resposta errada!, beba um gole!");
                 System.out.println("*--" + name + " toma um gole da cachaça--*");
                 avatar = avatar + 1;
@@ -628,7 +664,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
         switch (resposta) {
             case "Bodvar":
             case "bodvar":
-                System.out.println("\n[Dono do Bar] - Que onda é essa? você ganhou! Mas, você está se achando demais, quero ver a proxima perguta voce acertar ");
+                System.out.println("\n[Dono do Bar] - Que onda é essa? você ganhou! Não vá se achando demais, quero ver a proxima perguta voce acertar ");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma três goles de sua cachaça--*");
                 System.out.println("[Dono do Bar] - Eita cana braba da peste!!");
                 donoDoBar = donoDoBar + 3;
@@ -656,6 +692,10 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
             case "quarto Lugar":
             case "quarto lugar":
             case "Quarto lugar":
+            case "QuartoLugar":
+            case "quartoLugar":
+            case "quartolugar":
+            case "Quartolugar":
                 System.out.println("[Dono do Bar] - EiiTAAA! Bateu uma saudade dela!\n");
                 System.out.println("(" + name + "): De quem ? \n");
                 System.out.println("[DOno do bar] - Isqueçe BAHAHAHA");
