@@ -200,21 +200,43 @@ public class RpgPrincipal {
                 
                 switch (name) {
                 case "Anna":
-                    dueloGuarda.dueloAnna(150, 75);
+                    dueloGuarda.dueloAnna(175, 43);
                     break;
                 case "Floki":
-                    dueloGuarda.dueloFloki(150, 75);
+                    dueloGuarda.dueloFloki(250, 43);
                     break;
-                case "Harolc":
+                case "Halroc":
+                    dueloGuarda.dueloHalroc(150, 43);
+                    break;
+                case "Yruan":
+                    dueloGuarda.dueloYruan(140, 43);
+                    break;
+                case "Yvenna":
+                    dueloGuarda.dueloYvenna(200, 43);
+                    break;
+            }
+                
+                System.out.println("[Rei Gerald IV]-- Já sei, agora voce irá duelar com um dos meus melhores guerreiros, ele é lider e comandante geral da guarda Real. ");
+                
+                switch (name) {
+                case "Anna":
+                    dueloGuarda.dueloAnna(175, 75);
+                    break;
+                case "Floki":
+                    dueloGuarda.dueloFloki(250, 75);
+                    break;
+                case "Halroc":
                     dueloGuarda.dueloHalroc(150, 75);
                     break;
                 case "Yruan":
-                    dueloGuarda.dueloYruan(150, 75);
+                    dueloGuarda.dueloYruan(140, 75);
                     break;
                 case "Yvenna":
-                    dueloGuarda.dueloYvenna(150, 75);
+                    dueloGuarda.dueloYvenna(200, 75);
                     break;
             }
+                
+                
 
                 System.out.println("**-- PARABÉNS--**\n");
                 System.out.println("Você acabou de receber +2 Pontos de carisma com a cidade, com esses pontos de carismas você consegue ter mais vantagens em algumas missões"
@@ -235,7 +257,26 @@ public class RpgPrincipal {
                 System.out.println("[desconhecido1]-- Veja só, aquela pessoa é nova na cidade,você soube de um boato que mataram alguem ontem nos becos?\n");
                 System.out.println("[Desconhecido2]-- Sim, provavelmente essa é a unica pessoa nova na cidade, não temos casos de assasinato há algum tempo, vamos chamar as autoridades!"
                         + "** Os desconhcidos chamam os guardas para levar você a cadeia!");
-
+                
+                 switch (name) {
+                case "Anna":
+                    dueloGuarda.dueloAnna(175, 90);
+                    break;
+                case "Floki":
+                    dueloGuarda.dueloFloki(250, 90);
+                    break;
+                case "Halroc":
+                    dueloGuarda.dueloHalroc(150, 90);
+                    break;
+                case "Yruan":
+                    dueloGuarda.dueloYruan(140, 90);
+                    break;
+                case "Yvenna":
+                    dueloGuarda.dueloYvenna(200, 90);
+                    break;
+            }
+                
+                
               
                 System.out.println("Você perdeu -2 Pontos de carisma, se seu carisma chegar a 0, você poderá morrer por sofrer varias pedradas ao longo do caminho,"
                         + " Suba seu carismo para gnahar vantagens nas missões\n");
@@ -362,19 +403,19 @@ public class RpgPrincipal {
                     //Batalha contra o javali flamejante
                     switch (name) {
                 case "Anna":
-                    dueloJavaliF.dueloAnna(175, 100);
+                    dueloJavaliF.dueloAnna(175, 120);
                     break;
                 case "Floki":
-                    dueloJavaliF.dueloFloki(250, 100);
+                    dueloJavaliF.dueloFloki(250, 120);
                     break;
                 case "Halroc":
-                    dueloJavaliF.dueloHalroc(150, 100);
+                    dueloJavaliF.dueloHalroc(150, 120);
                     break;
                 case "Yruan":
-                    dueloJavaliF.dueloYruan(140, 100);
+                    dueloJavaliF.dueloYruan(140, 120);
                     break;
                 case "Yvenna":
-                    dueloJavaliF.dueloYvenna(200, 100);
+                    dueloJavaliF.dueloYvenna(200, 120);
                     break;
             }
                     
