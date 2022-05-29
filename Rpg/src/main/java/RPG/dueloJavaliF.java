@@ -14,7 +14,7 @@ public class dueloJavaliF {
 
             switch (Anna.habilidades()) {
                 case 1:
-                    System.out.println("Anna esfaqueou o Guarda");
+                    System.out.println("Anna esfaqueou o Javali Flamejante");
                     hpInimigo -= 20;
                     break;
                 case 2:
@@ -67,11 +67,11 @@ public class dueloJavaliF {
 
             switch (Floki.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda caiu com os tremores causados por Floki!");
+                    System.out.println("O Javali Flamejante caiu com os tremores causados por Floki!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Floki deu uma machadada no Guarda!");
+                    System.out.println("Floki deu uma machadada no Javali Flamejante!");
                     hpInimigo -= 15;
                     break;
                 case 3:
@@ -120,15 +120,15 @@ public class dueloJavaliF {
 
             switch (Halroc.habilidades()) {
                 case 1:
-                    System.out.println("Halroc deu um corte rápido no Guarda!");
+                    System.out.println("Halroc deu um corte rápido no Javali Flamejante!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Halroc deu um corte sombrio no Guarda!");
+                    System.out.println("Halroc deu um corte sombrio no Javali Flamejante!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("O Guarda é ferido pela explosão da bomba!");
+                    System.out.println("O Javali Flamejante é ferido pela explosão da bomba!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -173,15 +173,15 @@ public class dueloJavaliF {
 
             switch (Yruan.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda foi eletrificado!");
+                    System.out.println("O Javali Flamejante foi eletrificado!");
                     hpInimigo -= 15;
                     break;
                 case 2:
-                    System.out.println("O Guarda foi antigido por Yruan!");
+                    System.out.println("O Javali Flamejante foi antigido por Yruan!");
                     hpInimigo -= 20;
                     break;
                 case 3:
-                    System.out.println("Yruan golpeia o Guarda!");
+                    System.out.println("Yruan golpeia o Javali Flamejante!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -226,7 +226,7 @@ public class dueloJavaliF {
 
             switch (Yvenna.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda foi acertado pela pedra!");
+                    System.out.println("O Javali Flamejante foi acertado pela pedra!");
                     hpInimigo -= 20;
                     break;
                 case 2:
@@ -234,7 +234,7 @@ public class dueloJavaliF {
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("O Guarda é atingido pelos espinhos!");
+                    System.out.println("O Javali Flamejante é atingido pelos espinhos!");
                     hpInimigo -= 12;
                     break;
                 default:

@@ -457,7 +457,7 @@ public class RpgPrincipal {
                     System.out.println("POOOOWWWWWW!!!!");
                     TimeUnit.SECONDS.sleep(2);
                     System.out.println("que barulho que foi esse?");
-                    TimeUnit.SECONDS.sleep(3);
+                    TimeUnit.SECONDS.sleep(2);
                     System.out.println("Parecia o impacto de alguma coisa e está vindo lá de dentro");
                     System.out.println("Espera, o que é aquele brilho vindo lá de dentro?");
                     TimeUnit.SECONDS.sleep(5);
@@ -499,10 +499,12 @@ public class RpgPrincipal {
         
         
         // historia do bar
-System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter vencido a luta contra aquela fera!\n"
+System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você ter vencido a luta contra aquela fera!\n"
         + name + ": Acho melhor não, estou aqui por motivos maiores, não posso perder o foco!\n"
                 + "[Aliado do Rei - ] Vamos! Vai ser bom para conhecer a cidade e os moradores\n"
                 + name +": Tudo bem! pensando desta forma, vai ser bom para me familiarizar\n");
+        TimeUnit.SECONDS.sleep(4);
+
         int avatar = 0;
         int donoDoBar = 0;
 
@@ -511,18 +513,23 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
         System.out.println("[Dono do Taverna] - Fiquei sabendo que você matou o javali flamejante que estava atormentando as os campos de plantação da cidade, "
                 + "falo por todos da cidade que a partir de agora você será bem-vindo em Lavenham, como agradecimento venha tomar uma bebida ruim e barata com a gente!");
         System.out.println(".\n.\n.");
+        TimeUnit.SECONDS.sleep(4);
+        
         System.out.println("*--Algum tempo se passou dentro da taverna--*\n");
         
         System.out.println("[Dono do Taverna] - Te proponho um desafio para ver se você é melhor que eu na cachaça, o desafio será da seguinte forma:");
         System.out.println("[Dono do Taverna] - Eu irei fazer uma pergunta, se você responder de forma correta, eu tomo um gole de rum, se você errar, você que irá beber\n");
-        
+        TimeUnit.SECONDS.sleep(4);
         System.out.println("(" + name + "): Sim, eu aceito!, mas fique sabendo que você vai tomar na jabiroca");
         System.out.println("(" + name + "): Sou campeã(o) em tomar cachaça\n");
+        TimeUnit.SECONDS.sleep(4);
         
         System.out.println("[Dono do Taverna] - Seu pai, aquele cacacheiro, HAHAHA!");
         System.out.println("[Dono do Taverna] - Então vamos começar!");
         System.out.println("[Dono da Taverna] - Primeira pergunta, valendo um gole da minha cachaça");
+        TimeUnit.SECONDS.sleep(6);
         System.out.println("[Dono da Taverna] - O que a palavra legend significa em português?");
+        TimeUnit.SECONDS.sleep(2);
         System.out.println("a) Legenda\n"
                 + "b) Conto\n"
                 + "c) História\n"
@@ -579,13 +586,17 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 break;
         }
         System.out.println("\n\n[Dono da Taverna] - Segunda Pergunta: ");
+        TimeUnit.SECONDS.sleep(3);
         System.out.println("[Dono da Taverna] - Quem pintou Guernica?");
+        TimeUnit.SECONDS.sleep(2);
         System.out.println("a) Paulo Cesariano\n"
                 + "b) Flávio Picaxu\n"
                 + "c) Diogo Vergueira\n"
                 + "d) Pastilha do Coral\n"
                 + "e) Recife Delá");
+        TimeUnit.SECONDS.sleep(3);
         System.out.println("(" + name + "): Mas peraí, quem é Guernica?\n");
+        
         System.out.println("[Dono do Bar] - Só responda logo!\n");
         System.out.println("(" + name + "): Ta bom véi.");
         String pf = input.next();
@@ -709,11 +720,13 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
         
 
         System.out.println("Você desmaiou, acabou acordando no bar.\n");
+        
 
         System.out.println("Ahh, que dor no corpo! o que aquele cara colocou na minha bebida, que me fez ficar assim?\n");
 
         System.out.println("Opa! cadê minha esfera?\n"
                 + "Fui roubado!");
+        TimeUnit.SECONDS.sleep(4);
 
         System.out.println("Tente achar os suspeitos, temos ainda 3 pessoas no bar, elas sabem quem roubou a sua esfera!\n");
 
@@ -722,7 +735,7 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 + "[2] Garçonete\n"
                 + "[3] Homem que está conversando com a garçonete.\n");
         npc = input.nextInt();
-
+        TimeUnit.SECONDS.sleep(3);
         while ((npc == 1) || (npc > 3)) {
             if (npc > 3) {
                 System.out.println("OPERAÇÃO INVÁLIDA");
@@ -746,6 +759,7 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 + ".\n"
                 + ".\n");
         System.out.println("Você chegou na praça, aviste a pessoa que te roubou.");
+        TimeUnit.SECONDS.sleep(7);
         System.out.println("Olhe a sua frente há dois homens, um está com roupas pretas e o outro tem cabelo encaracolado"
                 + "quem você acha que é o ladrão????\n"
                 + "[1] HOMEM DE PRETO\n"
@@ -767,6 +781,8 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
             }
         }
         System.out.println("Você encontrou o ladrão, lute para recuperar seu artefato");
+        TimeUnit.SECONDS.sleep(3);
+        
         
         switch (name) {
                 case "Anna":
@@ -785,7 +801,9 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                     dueloLadrao.dueloYvenna(60, 150);
                     break;
             }
+        
         System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+        TimeUnit.SECONDS.sleep(3);
         
         
         
@@ -796,6 +814,7 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
         System.out.println("Você foi preso no calabouço :( ");
         System.out.println("Por sorte você conseguiu roubar dos guardas o mapa do calabouço sem que eles "
                 + "percebessem!!!!");
+        TimeUnit.SECONDS.sleep(5);
 
         do {
             System.out.println("Quer dar uma olhadinha no mapa?");
@@ -884,6 +903,8 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 + "|  nunca me viu, e nunca verão. Ainda assim, |\n"
                 + "|  sou a esperança de todos. Quem sou eu?    |\n"
                 + "@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n");
+        
+        TimeUnit.SECONDS.sleep(5);
 
         System.out.println("E agora qual a senha?");
         charada = input.next();
