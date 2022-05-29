@@ -961,12 +961,27 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 + ".\n"
                 + ".\n");
         System.out.println("O portal se abriu, logo a frente há uma saída. Vá em "
-                + "frente e recupere seu artefato roubado."
+                + "frente e tente encontrar a Elizabeth e recupere o seu artefato."
                 + ".\n"
                 + ".\n"
                 + ".\n");
 
-        //Parte da historia para conectar as historias!
+          System.out.println("E para a surpresa de todos, está esfera presente que" + name + " recebeu do rei como recompesa, tem grande propósito!\n"
+                + "Está esfera acumula-se todo o poder da criatura mais poderosa que já existiu na terra... ASTAROTH. A família de Gerald, tem linhagem com os mais antigos bruxos\n"
+                + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
+                + "Lógico que também preveram que iria chegar um guerreiro corajoso e com o coração puro!\n"
+                + "Que a único intuito deste guerreiro é prosperidade em todos os reinos, mas nada.\n"
+                + "[Elizabeth - Bruxa] - " +name+ " Você chegou até aqui e isso está mais do que provado, que seu destino é derrotar Astaroth e você se tornar o guerreiro\n"
+                        + "mais poderoso de todos os reinos.\n"
+                        + "Lembre-se que a sua arma, não foi ganhada em vão...\n"
+                        + ".\n"
+                        + ".\n"
+                        + ".\n"
+                        + "Chegou a hora de lutar com Astaroth!\n"
+                        + ".\n"
+                        + ".\n"
+                        + ".\n");
+                        
         
         System.out.println("Luta com astaroth");
         
@@ -987,10 +1002,17 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                     dueloFinal.dueloYvenna(60, 1000);
                     break;
         }
-        System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
-        // Historia de reviravolta 
-        
-        System.out.println("Luta depois dos pesonagens ganherem algo na historia que deixem eles mais fortes");
+        System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!\n"
+                + ".\n"
+                + ".\n"
+                + ".\n");
+       System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
+        System.out.println("[Elizabeth] " + name + " está fraca, é necessário fazer uma magia para que fique mais forte e consiga derrotar Astaroth!\n"
+                + "através das forças das bruxas da família, vou deixa-lo mais forte para conseguir derrotar Astaroth."
+                + ".\n"
+                + ".\n"
+                + ".\n" );
+
         
         //Batalhaa depois da historia 
         
