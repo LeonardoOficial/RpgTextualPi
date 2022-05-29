@@ -34,7 +34,9 @@ import java.util.Scanner;
         System.out.println("3 - Barragem: Atira uma saraivada de flechas em um oponente");
         return input.nextInt();
     }
-}
+
+     //To change body of generated methods, choose Tools | Templates.
+    }
 
 class Floki {
 
@@ -55,6 +57,8 @@ class Floki {
         System.out.println("3 - Recuperar: Recupera uma parte da sua vida máxima");
         return input.nextInt();
     }
+
+
 }
 
 class Halroc {
@@ -75,6 +79,7 @@ class Halroc {
         System.out.println("3 - Surpresa!!: Lança uma bomba no pé de um inimigo");
         return input.nextInt();
     }
+
 }
 
 class Yruan {
