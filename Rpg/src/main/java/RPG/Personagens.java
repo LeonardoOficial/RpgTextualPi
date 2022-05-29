@@ -138,6 +138,15 @@ class Javali {
     }
 }
 
+class javaliF{
+    
+     public static int habilidades() {
+        Random gera = new Random();
+        return gera.nextInt(3) + 1;
+    }
+    
+}
+
 class Ladrao {
 
     public static int habilidades() {

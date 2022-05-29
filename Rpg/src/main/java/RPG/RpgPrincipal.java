@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package RPG;
 
 import java.util.Scanner;
 
-/**
- *
- * @author csnas
- */
+
 public class RpgPrincipal {
     public static void main(String[] args) {
 
@@ -142,7 +136,7 @@ public class RpgPrincipal {
                     System.out.println("[2] - NAO");
                     escolha = input.nextInt();
                     if (escolha == 1) {
-                        name = "Halroc Cristoper";
+                        name = "Halroc";
                         break;
                     } else if (escolha == 2) {
                         break;
@@ -248,8 +242,151 @@ public class RpgPrincipal {
                 carisma = carisma - 2;
                 System.out.println("Seu atual nivel de carisma é: " + carisma);
                 break;
-
         }
+        
+        // historia do javali \/
+        
+        System.out.println("Dirija-se a floresta e encontre o Javali.");
+        //provavelmente uma condicional.
+
+        System.out.println("Você chega na floresta."
+                + "Veja, ali tem algumas pegadas e está dando a duas direções diferentes. ");
+
+        int pegada;
+
+        do {
+
+            System.out.println("[1]Pegadas que levam a trilha da DIREITA ");
+            System.out.println("[2]Pegadas que levam a trilha da ESQUERDA ");
+
+            pegada = input.nextInt();
+
+            switch (pegada) {
+                case 1:
+
+                    System.out.println("Pegadas te levam a um cervo");
+                    System.out.println("Ele é muito dócil, não tem com o que se preocupar");
+                    System.out.println("Continue Procurando");
+                    break;
+                case 2:
+                    System.out.println("Pegadas te levam a um Javali, porém, não é o que você procura.");
+                    System.out.println("Prepare-se, ele está vindo te atacar\n");
+
+                    // Batalha com javali normal.
+                     switch (name) {
+                case "Anna":
+                    dueloJavali.dueloAnna(175, 50);
+                    break;
+                case "Floki":
+                    dueloJavali.dueloFloki(250, 50);
+                    break;
+                case "Halroc":
+                    dueloJavali.dueloHalroc(150, 50);
+                    break;
+                case "Yruan":
+                    dueloJavali.dueloYruan(140, 50);
+                    break;
+                case "Yvenna":
+                    dueloJavali.dueloYvenna(200, 50);
+                    break;
+            }
+                    
+                    
+                    break;
+                default:
+                    System.out.println("Escolha uma das opções!!");
+            }
+        } while (pegada != 1 && pegada != 2);
+
+        System.out.println("[??????]Não adianta, você não vai achá-lo assim");
+        System.out.println("**Uma figura mesteriosa aparece na sua frente**");
+        System.out.println("[Desconhecido]: Olá, eu sou um caçador e eu sei muito qual animal você está procurando");
+        System.out.println("[Caçador]: Não é assim que você vai achá-lo, como o próprio nome já diz  ");
+        System.out.println("ELE É FLAMEJANTE!!");
+        System.out.println("Esse jeito convencional não adianta, ou seja, você tem que procurar sinais de fogo na floresta");
+        System.out.println("[Desconhecido]: Oh, olha, o que é aquilo? ");
+        System.out.println("Você olha, e não ver nada, quando vira novamente, o caçador já não está mais lá.");
+
+        System.out.println("Agora investigue a floresta e procure por sinais de incendio\n");
+
+        int lugar = 0;
+        do {
+
+            System.out.println("[1]Adentrar a floresta. ");
+            System.out.println("[2]Pequeno vilarejo ao lado da floresta ");
+            System.out.println("[3]Lagoa");
+            System.out.println("[4]Caverna misteriosa");
+
+            lugar = input.nextInt();
+
+            switch (lugar) {
+                case 1:
+                    System.out.println("Você adentrou a floresta");
+                    System.out.println("Como pode ver ela parece normal, menos pelo cheiro de fumaça");
+                    System.out.println("E olhe, também tem árvores carbonizadas, porém, é estranho.");
+                    System.out.println("além de queimadas, elas também estão com rachaduras no meio");
+                    System.out.println("Algo grande bateu nisso");
+                    System.out.println("Porém, ja faz um tempo que aconteceu.");
+                    System.out.println("Não há mais nada a fazer aqui\n");
+                    break;
+                case 2:
+                    System.out.println("Você chegou no vilarejo.");
+                    System.out.println("Está um cheiro insurpotavel de fumaça");
+                    System.out.println("Veja só aquelas casas, completamente destruidas, não foi apenas um incêndio que causou isso");
+                    System.out.println("Meu Deus, tem até corpos carbonizados.");
+                    System.out.println("Não irei achar mais nada aqui\n");
+
+                    break;
+                case 3:
+                    System.out.println("Você chegou na lagoa");
+                    System.out.println("Está muito tranquilo por aqui,");
+                    System.out.println("Você olha em volta e não encontra nada");
+                    System.out.println("Vir aqui foi uma grande perda de tempo");
+                    System.out.println("Não há nada a fazer aqui\n");
+
+                    break;
+                case 4:
+                    System.out.println("Você chegou na caverna misteriosa");
+                    System.out.println("como o proprio nome ja diz, ela é bem misteriosa");
+                    System.out.println("POCOTÓ, POCOTÓ, POCOTÓ");
+                    System.out.println("POOOOWWWWWW!!!!");
+                    System.out.println("que barulho que foi esse?");
+                    System.out.println("Parecia o impacto de alguma coisa e está vindo lá de dentro");
+                    System.out.println("Espera, o que é aquele brilho vindo lá de dentro?");
+                    System.out.println("WHOOOOSSSSSHHHHHH!!!!!");
+                    System.out.println("nossa, quase que o acerta, isso foi perigoso");
+                    System.out.println("não há duvidas, ele está lá dentro");
+                    System.out.println("Ele está vindo, deve ter sentido seu cheiro");
+                    System.out.println("PREPARE-SE!!!\n");
+
+                    //Batalha contra o javali flamejante
+                    switch (name) {
+                case "Anna":
+                    dueloJavaliF.dueloAnna(175, 100);
+                    break;
+                case "Floki":
+                    dueloJavaliF.dueloFloki(250, 100);
+                    break;
+                case "Halroc":
+                    dueloJavaliF.dueloHalroc(150, 100);
+                    break;
+                case "Yruan":
+                    dueloJavaliF.dueloYruan(140, 100);
+                    break;
+                case "Yvenna":
+                    dueloJavaliF.dueloYvenna(200, 100);
+                    break;
+            }
+                    
+                    
+                    
+                    break;
+                default:
+                    System.out.println("Escolha uma Opção");
+            }
+        } while (lugar != 4);
+        
+        
         // historia do bar
 System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter vencido a luta contra aquela fera!\n"
         + name + ": Acho melhor não, estou aqui por motivos maiores, não posso perder o foco!\n"
