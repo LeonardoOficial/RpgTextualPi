@@ -538,8 +538,9 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 System.out.println("(" + name + "): De quem ? \n");
                 System.out.println("[DOno do bar] - Isqueçe BAHAHAHA");
                 System.out.println("{Dono do Bar] - Só falta mais uma hein!!");
-                System.out.println("[Dono do Bar] *-- Dono Do Bar toma quatro goles de sua cachaça--*");
+                System.out.println("[Dono do Bar] *-- Dono Do Bar toma quatro goles de sua cachaça--*\n");
                 donoDoBar = donoDoBar + 4;
+                break;
             default:
                  System.out.println("*--" + name + " toma mais 4 goles da cachaça--*");
                 System.out.println("(" + name + "):- Aaahhh, Desce mais não que essas desçeram rasgando!");
@@ -567,19 +568,20 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 System.out.println("[Dono do Bar] - Olokinho meu!!");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma cinco goles de sua cachaça--*");
                 donoDoBar = donoDoBar + 5;
+                break;
             default:
                 System.out.println("[Dono do Bar] - Poxa meu nobre, isso foi facil demais! só não entende quem não quer!\n"
                         + "[Dono do bar] - Quem deixou isso aqui foi um tal de Fibonacci\n");
                 System.out.println("*--" + name + " toma mais 5 goles da cachaça--*\n");
-                System.out.println("(" + name + "):- OnDe É qui eu to? da Onde veio esaa mizera");
+                System.out.println("(" + name + "):- OnDe É qui eu to? da Onde veio esaa mizera\n");
                 avatar = avatar + 5;
                 break;
         }
         if (donoDoBar > avatar) {
-            System.out.println("*--Parabéns! Você Ganhou!--*");
+            System.out.println("\n*--Parabéns! Você Ganhou!--*\n");
             carisma = carisma + 10;
         } else {
-            System.out.println("*--Parabéns! Você é um(a) cachaceiro(a) de primeira, bebeu todas e perdeu--*");
+            System.out.println("*--Fracassado! Você é um(a) cachaceiro(a) de primeira, bebeu todas e perdeu--*");
             carisma = carisma - 10;
         }
 
@@ -654,6 +656,7 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
             }
         }
         System.out.println("Você encontrou o ladrão, lute para recuperar seu artefato");
+        
         switch (name) {
                 case "Anna":
                     dueloLadrao.dueloAnna(60, 150);
@@ -792,29 +795,68 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
                 + ".\n");
 
         //Parte da historia para conectar as historias!
+        
         System.out.println("Luta com astaroth");
         
         switch(name){
              case "Anna":
-                    dueloFinal.dueloAnna(60, 150);
+                    dueloFinal.dueloAnna(60, 1000);
                     break;
                 case "Floki":
-                    dueloFinal.dueloFloki(60, 150);
+                    dueloFinal.dueloFloki(60, 1000);
                     break;
                 case "Harolc":
-                    dueloFinal.dueloHalroc(60, 150);
+                    dueloFinal.dueloHalroc(60, 1000);
                     break;
                 case "Yruan":
-                    dueloFinal.dueloYruan(60, 150);
+                    dueloFinal.dueloYruan(60, 1000);
                     break;
                 case "Yvenna":
-                    dueloFinal.dueloYvenna(60, 150);
+                    dueloFinal.dueloYvenna(60, 1000);
                     break;
         }
+        System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
+        // Historia de reviravolta 
+        
+        System.out.println("Luta depois dos pesonagens ganherem algo na historia que deixem eles mais fortes");
+        
+        switch (name){
+            case "Anna":
+                    dueloFinal.dueloAnna(60, 1000);
+                    break;
+                case "Floki":
+                    dueloFinal.dueloFloki(60, 1000);
+                    break;
+                case "Harolc":
+                    dueloFinal.dueloHalroc(60, 1000);
+                    break;
+                case "Yruan":
+                    dueloFinal.dueloYruan(60, 1000);
+                    break;
+                case "Yvenna":
+                    dueloFinal.dueloYvenna(60, 1000);
+                    break;
+        }
+        
+        //Batalhaa depois da historia 
+        
+        switch (name){
+            case "Anna":
+                    dueloFinal2.dueloAnnaFinal(1250, 1000);
+                    break;
+                case "Floki":
+                    dueloFinal2.dueloFlokiFinal(1256, 1000);
+                    break;
+                case "Harolc":
+                    dueloFinal2.dueloHalrocFinal(1300, 1000);
+                    break;
+                case "Yruan":
+                    dueloFinal2.dueloYruanFinal(1367, 1000);
+                    break;
+                case "Yvenna":
+                    dueloFinal2.dueloYvennaFinal(1232, 1000);
+                    break;
+        }
+        
     }
 }
-
-    
-
-
-

@@ -9,10 +9,10 @@ package RPG;
 public class dueloFinal {
 
     static int dueloAnna(int hpAnna, int hpAstaroth) {
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Anna " + hpAnna);
-        System.out.println("HP \n Astaroth  " + hpAstaroth);
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("HP \n ASTAROTH  " + hpAstaroth);
+        System.out.println("=-=-=-=-=-=\n");
 
         while (hpAnna > 0 && hpAstaroth > 0) {
             switch (Anna.habilidades()) {
@@ -35,13 +35,12 @@ public class dueloFinal {
             switch (Astaroth.habilidades()) {
                 case 1:
 
-                    System.out.println("ASTAROTH\n fez um corte com a CEIFADORA DE ALMAS");
-                    System.out.println("s");
+                    System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
                     hpAnna -= 1000;
                     break;
                 case 2:
-                    System.out.println("ASTAROTH\n ultilizou o FULGOR NEGRO");
-                    System.out.println("ASTAROTH levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                    System.out.println("[ASTAROTH]\n ultilizou o FULGOR NEGRO");
+                    System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
                     hpAnna -= 2000;
                     break;
             }
@@ -50,10 +49,10 @@ public class dueloFinal {
     }
 
     static int dueloFloki(int hpFloki, int hpAstaroth) {
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Floki " + hpFloki);
         System.out.println("HP \n ASTAROTH " + hpAstaroth);
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("=-=-=-=-=-=\n");
 
         while (hpFloki > 0 && hpAstaroth > 0) {
 
@@ -78,13 +77,13 @@ public class dueloFinal {
 
                 switch (Astaroth.habilidades()) {
                     case 1:
-                        System.out.println("ASTAROTH\n fez um corte com a CEIFADORA DE ALMAS");
+                        System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
                         System.out.println("s");
                         hpFloki -= 1000;
                         break;
                     case 2:
-                        System.out.println("ASTAROTH\n ultilizou o FULGOR NEGRO");
-                        System.out.println("ASTAROTH levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        System.out.println("[ASTAROTH]\n ultilizou o FULGOR NEGRO");
+                        System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
                         hpFloki -= 2000;
                         break;
                 }
@@ -94,10 +93,10 @@ public class dueloFinal {
     }
 
     static int dueloHalroc(int hpHalroc, int hpAstaroth) {
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Harolc " + hpHalroc);
         System.out.println("HP \n ASTAROTH " + hpAstaroth);
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("=-=-=-=-=-=\n");
 
         while (hpHalroc > 0 && hpAstaroth > 0) {
 
@@ -123,13 +122,12 @@ public class dueloFinal {
 
                 switch (Astaroth.habilidades()) {
                     case 1:
-                        System.out.println("ASTAROTH\n fez um corte com a CEIFADORA DE ALMAS");
-                        System.out.println("s");
+                        System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
                         hpHalroc -= 1000;
                         break;
                     case 2:
-                        System.out.println("ASTAROTH\n ultilizou o FULGOR NEGRO");
-                        System.out.println("ASTAROTH levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        System.out.println("[ASTAROTH]\n ultilizou o FULGOR NEGRO");
+                        System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
                         hpHalroc -= 2000;
                         break;
                 }
@@ -167,13 +165,13 @@ public class dueloFinal {
 
                 switch (Astaroth.habilidades()) {
                     case 1:
-                        System.out.println("ASTAROTH\n fez um corte com a CEIFADORA DE ALMAS");
+                        System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
                         System.out.println("s");
                         hpYruan -= 1000;
                         break;
                     case 2:
-                        System.out.println("ASTAROTH\n ultilizou o FULGOR NEGRO");
-                        System.out.println("ASTAROTH levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        System.out.println("[ASTAROTH]\n ultilizou o FULGOR NEGRO");
+                        System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
                         hpYruan -= 2000;
                         break;
                 }
