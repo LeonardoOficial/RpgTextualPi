@@ -44,6 +44,7 @@ public class RpgPrincipal {
             System.out.print("          [1] JOGAR          \n");
             System.out.print("          [2] CRÉDITOS       \n");
             System.out.print("          [3] COMANDOS       \n");
+            System.out.print("          [4] HISTóRIA       \n ");
             System.out.print("=============================\n\n\n");
             System.out.println("Digite uma opção: ");
             opcao = input.nextInt();
@@ -61,6 +62,7 @@ public class RpgPrincipal {
                     } else if (menu == 2) {
                         break;
                     }
+                    break;
 
                 case 2:
                     System.out.println("Directed: Amaury S. Alves");
@@ -79,15 +81,23 @@ public class RpgPrincipal {
                     if (menu == 1) {
                         System.out.println("\n Iniciando");
                         break;
-                    } else if (menu == 2) {
+                    }  if (menu == 2) {
                         break;
                     }
+                    break;
 
                 case 3:
                     // HA FAZER
                     break;
-
+                    
+                case 4:
+                    
+                    historia.historia();
+                    
+                    
+                break;
             }
+
         } while (menu != 1);
         System.out.println("Sejam bem-vindos! A cidade de Lavenham, uma das cidades mais rica de Nochma, nela você irá"
                 + " descobrir que todos nós temos um mistério a ser revelado! \n");
