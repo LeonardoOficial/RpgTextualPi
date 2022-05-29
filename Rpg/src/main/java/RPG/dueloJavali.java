@@ -43,10 +43,11 @@ public class dueloJavali {
                 }
             } else {
                 System.out.println("Javali DERROTADO!!!");
+                break;
             }
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Anna " + hpAnna);
-            System.out.println("Hp Javali " + hpInimigo);
+            System.out.println("Hp \nAnna " + hpAnna);
+            System.out.println("Hp \nJavali " + hpInimigo);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpAnna;
@@ -92,10 +93,11 @@ public class dueloJavali {
                 }
             } else {
                 System.out.println("Javali DERROTADO!!!");
+                break;
             }
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Floki " + hpFloki);
-            System.out.println("Hp Javali " + hpInimigo);
+            System.out.println("Hp \nFloki " + hpFloki);
+            System.out.println("Hp \nJavali " + hpInimigo);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpFloki;
@@ -141,10 +143,11 @@ public class dueloJavali {
                 }
             } else {
                 System.out.println("Javali DERROTADO!!!");
+                break;
             }
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Halroc " + hpHalroc);
-            System.out.println("Hp Javali " + hpInimigo);
+            System.out.println("Hp \nHalroc " + hpHalroc);
+            System.out.println("Hp \nJavali " + hpInimigo);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpHalroc;
@@ -190,10 +193,11 @@ public class dueloJavali {
                 }
             } else {
                 System.out.println("Javali DERROTADO!!!");
+                break;
             }
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Yruan " + hpYruan);
-            System.out.println("Hp Javali " + hpInimigo);
+            System.out.println("Hp \nYruan " + hpYruan);
+            System.out.println("Hp \nJavali " + hpInimigo);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpYruan;
@@ -239,10 +243,11 @@ public class dueloJavali {
                 }
             } else {
                 System.out.println("Javali DERROTADO!!!");
+                break;
             }
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Yvenna " + hpYvenna);
-            System.out.println("Hp Javali " + hpInimigo);
+            System.out.println("Hp \nYvenna " + hpYvenna);
+            System.out.println("Hp \nJavali " + hpInimigo);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpYvenna;

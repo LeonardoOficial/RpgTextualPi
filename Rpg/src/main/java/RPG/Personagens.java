@@ -147,7 +147,7 @@ class javaliF{
     
      public static int habilidades() {
         Random gera = new Random();
-        return gera.nextInt(3) + 1;
+        return gera.nextInt(3)+ 1;
     }
     
 }

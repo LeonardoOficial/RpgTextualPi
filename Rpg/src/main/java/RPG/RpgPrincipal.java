@@ -861,24 +861,6 @@ System.out.println("[Aliado do Rei - ] Vamos a taberna! comemorar por você ter 
         
         System.out.println("Luta depois dos pesonagens ganherem algo na historia que deixem eles mais fortes");
         
-        switch (name){
-            case "Anna":
-                    dueloFinal.dueloAnna(60, 1000);
-                    break;
-                case "Floki":
-                    dueloFinal.dueloFloki(60, 1000);
-                    break;
-                case "Harolc":
-                    dueloFinal.dueloHalroc(60, 1000);
-                    break;
-                case "Yruan":
-                    dueloFinal.dueloYruan(60, 1000);
-                    break;
-                case "Yvenna":
-                    dueloFinal.dueloYvenna(60, 1000);
-                    break;
-        }
-        
         //Batalhaa depois da historia 
         
         switch (name){

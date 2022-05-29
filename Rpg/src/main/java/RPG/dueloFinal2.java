@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package RPG;
 
-/**
- *
- * @author Leonardo
- */
+
 public class dueloFinal2 {
 
       static int dueloAnnaFinal(int hpAnna, int hpAstaroth) {
@@ -35,6 +29,7 @@ public class dueloFinal2 {
                     System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
                     break;
             }
+            if (hpAstaroth > 0) {
                  switch (Astaroth.habilidades()) {
                     case 1:
                     System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
@@ -46,10 +41,13 @@ public class dueloFinal2 {
                     hpAnna -= 145;
                     break;
                 }
-            
+            }else{
+                System.out.println("Astaroth DERROTADO!!!");
+                break;
+            }
             System.out.println("\n=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Anna " + hpAnna);
-            System.out.println("Hp Ladrão " + hpAstaroth);
+            System.out.println("Hp \nAnna " + hpAnna);
+            System.out.println("Hp \nAstaroth " + hpAstaroth);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=\n");
         }
         return hpAnna;
@@ -81,6 +79,7 @@ public class dueloFinal2 {
                     System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
                     break;
             }
+            if(hpAstaroth>0){
                  switch (Astaroth.habilidades()) {
                     case 1:
                     System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
@@ -92,10 +91,14 @@ public class dueloFinal2 {
                     hpFloki -= 145;
                     break;
                 }
+            }else{
+                 System.out.println("Astaroth DERROTADO!!!");
+                break;
+            }
             
             System.out.println("\n=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Floki " + hpFloki);
-            System.out.println("Hp Guarda " + hpAstaroth);
+            System.out.println("Hp \nFloki " + hpFloki);
+            System.out.println("Hp \nAstaroth " + hpAstaroth);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=\n");
         }
         return hpFloki;
@@ -104,7 +107,7 @@ public class dueloFinal2 {
     static int dueloHalrocFinal(int hpHalroc, int hpAstaroth) {
         System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Harolc " + hpHalroc);
-        System.out.println("HP \n Ladrão " + hpAstaroth);
+        System.out.println("HP \n Astaroth " + hpAstaroth);
         System.out.println("=-=-=-=-=-=\n");
 
         while (hpHalroc > 0 && hpAstaroth > 0) {
@@ -126,6 +129,7 @@ public class dueloFinal2 {
                     System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
                     break;
             }
+            if(hpAstaroth>0){
                  switch (Astaroth.habilidades()) {
                     case 1:
                     System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
@@ -135,10 +139,15 @@ public class dueloFinal2 {
                     System.out.println("[ASTAROTH] Ultilizou o FULGOR NEGRO");
                     System.out.println("[ASTAROTH] Levantando seu braço e criando uma esfera negra no recinto,deixando tudo escuro como o vazio");
                     hpHalroc -= 145;
-                    break;                }
+                    break; 
+                 }
+            }else{
+                 System.out.println("Astaroth DERROTADO!!!");
+                break;
+            }
              System.out.println("\n=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Halroc " + hpHalroc);
-            System.out.println("Hp Ladrão " + hpAstaroth);
+            System.out.println("Hp \nHalroc " + hpHalroc);
+            System.out.println("Hp \nAstaroth " + hpAstaroth);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=\n");
         }
         return hpHalroc;
@@ -147,7 +156,7 @@ public class dueloFinal2 {
     static int dueloYruanFinal(int hpYruan, int hpAstaroth) {
         System.out.println("=-=-=-=-=-=");
         System.out.println("HP \n Yruan " + hpYruan);
-        System.out.println("HP \n Ladrão " + hpAstaroth);
+        System.out.println("HP \n Astaroth " + hpAstaroth);
         System.out.println("=-=-=-=-=-=");
 
         while (hpYruan > 0 && hpAstaroth > 0) {
@@ -169,6 +178,7 @@ public class dueloFinal2 {
                     System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
                     break;
             }
+           if(hpAstaroth>0){ 
                 switch (Astaroth.habilidades()) {
                     case 1:
                     System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
@@ -180,10 +190,14 @@ public class dueloFinal2 {
                     hpYruan -= 145;
                     break;      
                 }
+           }else{
+                System.out.println("Astaroth DERROTADO!!!");
+                break;
+           }
          
             System.out.println("\n=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Yruan " + hpYruan);
-            System.out.println("Hp Astaroth " + hpAstaroth);
+            System.out.println("Hp \nYruan " + hpYruan);
+            System.out.println("Hp \nAstaroth " + hpAstaroth);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=\n");
         }
         return hpYruan;
@@ -214,6 +228,7 @@ public class dueloFinal2 {
                     System.out.println("OPÇÃO INVALIDA");
                     break;
             }
+            if(hpAstaroth> 0){
                  switch (Astaroth.habilidades()) {
                     case 1:
 
@@ -226,9 +241,13 @@ public class dueloFinal2 {
                     hpYvenna -= 145;
                     break;
                 }
+                }else{
+                System.out.println("Astaroth DERROTADO!!!");
+                break;
+           }
              System.out.println("\n=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp Yvenna " + hpYvenna);
-            System.out.println("Hp ASTAROTH " + hpAstaroth);
+            System.out.println("Hp \nYvenna " + hpYvenna);
+            System.out.println("Hp \nASTAROTH " + hpAstaroth);
             System.out.println("=-=-=-=-=-=-=-=-=-=-=\n");
         }
         return hpYvenna;
