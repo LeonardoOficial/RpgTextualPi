@@ -9,7 +9,8 @@ public class RpgPrincipal {
 
         Scanner input = new Scanner(System.in);
 
-        int escolha = 0, opcao, menu = 0;
+        int escolha = 0, menu = 0;
+        String opcao;
         String personagem;
         int carisma = 10;
         String name = null;
@@ -44,15 +45,17 @@ public class RpgPrincipal {
             System.out.print("=============================\n");
             System.out.print("          [1] JOGAR          \n");
             System.out.print("          [2] CRÉDITOS       \n");
-            System.out.print("          [3] COMANDOS       \n");
+            System.out.print("          [3] INSTRUÇOES       \n");
             System.out.print("          [4] HISTóRIA       \n ");
             System.out.print("=============================\n\n\n");
             System.out.println("Digite uma opção: ");
-            opcao = input.nextInt();
+            opcao = input.next();
 
             switch (opcao) {
-                case 1:
-
+                case "1":
+                case "Jogar":
+                case "jogar":
+                case "JOGAR":
                     System.out.println("Gostaria de iniciar");
                     System.out.println("[1] - SIM");
                     System.out.println("[2] - NÃO");
@@ -65,7 +68,13 @@ public class RpgPrincipal {
                     }
                     break;
 
-                case 2:
+                case "2":
+                case "Créditos":
+                case "créditos":
+                case "Creditos":
+                case "creditos":
+                case "CRÉDITOS":
+                case "CREDITOS":
                     System.out.println("Directed: Amaury S. Alves");
                     System.out.println("Executive Producer: Leonardo S. Santos");
                     System.out.println("Production Director: Amaurilio S. Alves");
@@ -88,11 +97,20 @@ public class RpgPrincipal {
                     }
                     break;
 
-                case 3:
-                    // HA FAZER
+                case "3":
+                case "INSTRUÇÕES":
+                case "INSTRUÇOES":
+                case "INSTRUCOES":
+                case "Instruções":
+                case "instruções":
+                    
+                    System.out.println("Ações de personagens *-- --*\n");
+                    System.out.println("Falas de personagens - \n");
+                    System.out.println("Em algumas perguntas [1] & [2] pode colocar numero e letra\n");
+                    System.out.println("Em perguntas com ( ) ultilize números");
                     break;
 
-                case 4:
+                case "4":
 
                     historia.historia();
 
@@ -120,8 +138,8 @@ public class RpgPrincipal {
                 case "ANNA":
                     Anna.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
-                    System.out.println("[1] - SIM");
-                    System.out.println("[2] - NAO");
+                    System.out.println("(1) - SIM");
+                    System.out.println("(2) - NAO");
                     escolha = input.nextInt();
 
                     if (escolha == 1) {
@@ -138,8 +156,8 @@ public class RpgPrincipal {
                 case "FLOKI":
                     Floki.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
-                    System.out.println("[1] - SIM");
-                    System.out.println("[2] - NAO");
+                    System.out.println("(1) - SIM");
+                    System.out.println("(2) - NAO");
                     escolha = input.nextInt();
 
                     if (escolha == 1) {
@@ -156,8 +174,8 @@ public class RpgPrincipal {
                 case "halroc":
                     Halroc.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
-                    System.out.println("[1] - SIM");
-                    System.out.println("[2] - NAO");
+                    System.out.println("(1) - SIM");
+                    System.out.println("(2) - NAO");
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         name = "Halroc";
@@ -174,8 +192,8 @@ public class RpgPrincipal {
 
                     Yruan.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
-                    System.out.println("[1] - SIM");
-                    System.out.println("[2] - NAO");
+                    System.out.println("(1) - SIM");
+                    System.out.println("(2) - NAO");
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         name = "Yruan";
@@ -191,8 +209,8 @@ public class RpgPrincipal {
                 case "YVENNA":
                     Yvenna.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
-                    System.out.println("[1] - SIM");
-                    System.out.println("[2] - NAO");
+                    System.out.println("(1) - SIM");
+                    System.out.println("(2) - NAO");
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         name = "Yvenna";
@@ -215,8 +233,8 @@ public class RpgPrincipal {
         System.out.println("\nEle disse que o rei está precisando de guerreiros dispostos a encarar desafios propostos por ele. Você aceita participar?");
 
         do {
-            System.out.println("[1] - Sim");
-            System.out.println("[2] - Nao");
+            System.out.println("(1) - Sim");
+            System.out.println("(2) - Não");
             escolha = input.nextInt();
 
             switch (escolha) {
@@ -358,8 +376,8 @@ public class RpgPrincipal {
 
         do {
 
-            System.out.println("[1]Pegadas que levam a trilha da DIREITA ");
-            System.out.println("[2]Pegadas que levam a trilha da ESQUERDA ");
+            System.out.println("(1) Pegadas que levam a trilha da DIREITA ");
+            System.out.println("(2) Pegadas que levam a trilha da ESQUERDA ");
 
             TimeUnit.SECONDS.sleep(3);
 
@@ -416,10 +434,10 @@ public class RpgPrincipal {
         int lugar = 0;
         do {
 
-            System.out.println("[1]Adentrar a floresta. ");
-            System.out.println("[2]Pequeno vilarejo ao lado da floresta ");
-            System.out.println("[3]Lagoa");
-            System.out.println("[4]Caverna misteriosa");
+            System.out.println("(1)Adentrar a floresta. ");
+            System.out.println("(2)Pequeno vilarejo ao lado da floresta ");
+            System.out.println("(3)Lagoa");
+            System.out.println("(4)Caverna misteriosa");
 
             lugar = input.nextInt();
 
@@ -737,17 +755,23 @@ public class RpgPrincipal {
         System.out.println(name + ": É, realmente foi muito bom ter ido a taberna!\n"
                 + "[DESCONHECIDO -]" + name + ", vou embora! já está tarde!\n"
                 + "você quer ir?\n"
+                + name + ": Não, vou ficar! até mais!\n"
+                + "O tempo passou, " + name + " ficou no bar\n"
+                + "acabará dormindo lá mesmo...");
+        
+        System.out.println(name + ": É, realmente foi muito bom ter ido a taberna!\n"
+                + "[DESCONHECIDO -]" + name + ", vou embora! já está tarde!\n"
+                + "você quer ir?\n"
                 + name + ": Não, vou ficar! até mais!\n");
         System.out.println("[Dono do bar]: AGORA QUE A VERDADEIRA FESTA COMEÇA HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!!!!!");
         System.out.println("*--Dono do bar começa a distribuir hidromel dos anões para todos da taberna--*");
         System.out.println("*--" + name + " começa a beber todas sem parar, e começa a dançar em cima da mesa--*");
         System.out.println("todos começam a cantar, rir e dançar");
         System.out.println("*--" + name + " não aguenta mais beber e apaga completamente.--*");
-
+        
         int npc, ladrao;
 
-        System.out.println("Dia Seguinte...\n");
-        System.out.println("Você acorda no bar sem entender nada.\n");
+        System.out.println("Você desmaiou, acabou acordando no bar.\n");
 
         System.out.println("Ahh, que dor no corpo! o que aquele cara colocou na minha bebida, que me fez ficar assim?\n");
 
@@ -758,9 +782,9 @@ public class RpgPrincipal {
         System.out.println("Tente achar os suspeitos, temos ainda 3 pessoas no bar, elas sabem quem roubou a sua esfera!\n");
 
         System.out.println("Para quem você quer pedir essa informação?\n"
-                + "[1]  Homem que está sentado a sua direita\n"
-                + "[2] Garçonete\n"
-                + "[3] Homem que está conversando com a garçonete.\n");
+                + "(1)  Homem que está sentado a sua direita\n"
+                + "(2) Garçonete\n"
+                + "(3) Homem que está conversando com a garçonete.\n");
         npc = input.nextInt();
         TimeUnit.SECONDS.sleep(3);
         while ((npc == 1) || (npc > 3)) {
@@ -789,48 +813,49 @@ public class RpgPrincipal {
         TimeUnit.SECONDS.sleep(7);
         System.out.println("Olhe a sua frente há dois homens, um está com roupas pretas e o outro tem cabelo encaracolado"
                 + "quem você acha que é o ladrão????\n"
-                + "[1] HOMEM DE PRETO\n"
-                + "[2] HOMEM DE CABELO ENCARACOLADO\n");
+                + "(1) HOMEM DE PRETO\n"
+                + "(2) HOMEM DE CABELO ENCARACOLADO\n");
         ladrao = input.nextInt();
 
         OUTER:
-        while (ladrao >= 3) {
+        while (ladrao >=3) {
             switch (ladrao) {
                 case 1:
-                    System.out.println("Você acusou a pessoa errada e agora sofrerá as consequências");
-                    System.out.println("Os guardas estão vindo, nem adianta correr");
-                    System.out.println("[GUARDA] - Venha, você será preso no calabouço");
-                    break;
+                System.out.println("Você acusou a pessoa errada e agora sofrerá as consequências");
+                System.out.println("Os guardas estão vindo, nem adianta correr");
+                System.out.println("[GUARDA] - Venha, você será preso no calabouço");
+                break;
                 case 2:
-                    System.out.println("Você encontrou o ladrão, lute para recuperar seu artefato");
-                    TimeUnit.SECONDS.sleep(3);
-                    switch (name) {
-                        case "Anna":
-                            dueloLadrao.dueloAnna(60, 150);
+        System.out.println("Você encontrou o ladrão, lute para recuperar seu artefato");
+        TimeUnit.SECONDS.sleep(3);
+
+        switch (name) {
+            case "Anna":
+                dueloLadrao.dueloAnna(60, 150);
                             System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
                             TimeUnit.SECONDS.sleep(3);
-                            break;
-                        case "Floki":
-                            dueloLadrao.dueloFloki(60, 150);
+                break;
+            case "Floki":
+                dueloLadrao.dueloFloki(60, 150);
                             System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
                             TimeUnit.SECONDS.sleep(3);
-                            break;
-                        case "Harolc":
-                            dueloLadrao.dueloHalroc(60, 150);
+                break;
+            case "Harolc":
+                dueloLadrao.dueloHalroc(60, 150);
                             System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
                             TimeUnit.SECONDS.sleep(3);
-                            break;
-                        case "Yruan":
-                            dueloLadrao.dueloYruan(60, 150);
+                break;
+            case "Yruan":
+                dueloLadrao.dueloYruan(60, 150);
                             System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
                             TimeUnit.SECONDS.sleep(3);
-                            break;
-                        case "Yvenna":
-                            dueloLadrao.dueloYvenna(60, 150);
+                break;
+            case "Yvenna":
+                dueloLadrao.dueloYvenna(60, 150);
                             System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
                             TimeUnit.SECONDS.sleep(3);
-                            break;
-                    }
+                break;
+        }
                 default:
                     System.out.println("OPERAÇÃO INVÁLIDA\n"
                             + "digite uma opção válida\n"
@@ -842,10 +867,12 @@ public class RpgPrincipal {
         }
         int escolha1, escolha2;
         String charada;
+
         System.out.println("Você foi preso no calabouço :( ");
         System.out.println("Por sorte você conseguiu roubar dos guardas o mapa do calabouço sem que eles "
                 + "percebessem!!!!");
         TimeUnit.SECONDS.sleep(5);
+
         do {
             System.out.println("Quer dar uma olhadinha no mapa?");
             System.out.println("[1] SIM");
@@ -879,11 +906,12 @@ public class RpgPrincipal {
             }
 
         } while (escolha1 == 2);
+
         do {
             System.out.println("Olhando para o mapa, aparentemente você precisa chegar"
                     + "até o portal secreto, qual caminho irá seguir????");
-            System.out.println("[1] ESCADARIA");
-            System.out.println("[2] TÚNEL");
+            System.out.println("(1) ESCADARIA");
+            System.out.println("(2) TÚNEL");
             escolha2 = input.nextInt();
 
             switch (escolha2) {
@@ -911,6 +939,7 @@ public class RpgPrincipal {
             }
 
         } while (escolha2 != 2);
+
         System.out.println("Veja, na porta há um pergaminho, talvez tenha alguma dica de como "
                 + "abrir a porta\n");
         System.out.println("@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n"
@@ -931,9 +960,12 @@ public class RpgPrincipal {
                 + "|  nunca me viu, e nunca verão. Ainda assim, |\n"
                 + "|  sou a esperança de todos. Quem sou eu?    |\n"
                 + "@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n");
+
         TimeUnit.SECONDS.sleep(5);
+
         System.out.println("E agora qual a senha?");
         charada = input.next();
+
         while (!charada.equalsIgnoreCase("futuro")) {
 
             System.out.println("Não é isso. Tente denovo");
@@ -945,27 +977,39 @@ public class RpgPrincipal {
         System.out.println(".\n"
                 + ".\n"
                 + ".\n");
-        System.out.println("O portal se abriu, logo a frente há uma saída. Vá em "
-                + "frente e tente encontrar a Elizabeth e recupere o seu artefato."
+        System.out.println("O portal se abriu, logo a frente há uma saída."
+                + " *--Vá em frente e tente encontrar a Elizabeth e recupere o seu artefato.--*"
                 + ".\n"
                 + ".\n"
                 + ".\n");
-        System.out.println("E para a surpresa de todos, está esfera presente que" + name + " recebeu do rei como recompesa, tem grande propósito!\n"
-                + "Está esfera acumula-se todo o poder da criatura mais poderosa que já existiu na terra... ASTAROTH. A família de Gerald, tem linhagem com os mais antigos bruxos\n"
+
+        System.out.println("  ### E para a surpresa de todos, a esfera que foi dada de presente para " + name + " como agradecimento pelo rei, tem grande propósito!\n"
+                + "Está esfera acumula todo o poder da criatura mais poderosa que já existiu na terra... Chamada ASTAROTH. A linhagem do Rei, tem como proteção a mais antiga das bruxas\n"
                 + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
-                + "Lógico que também preveram que iria chegar um guerreiro corajoso e com o coração puro!\n"
-                + "Que a único intuito deste guerreiro é prosperidade em todos os reinos, mas nada.\n"
-                + "[Elizabeth - Bruxa] - " + name + " Você chegou até aqui e isso está mais do que provado, que seu destino é derrotar Astaroth e você se tornar o guerreiro\n"
-                + "mais poderoso de todos os reinos.\n"
-                + "Lembre-se que a sua arma, não foi ganhada em vão...\n"
-                + ".\n"
-                + ".\n"
-                + ".\n"
-                + "Chegou a hora de lutar com Astaroth!\n"
-                + ".\n"
-                + ".\n"
-                + ".\n");
-        System.out.println("Luta com astaroth");
+                + "Esta mesma bruxa preveu, que um guerreiro(a) corajoso(a) e com o coração puro! iria virar historia\n"
+                + "A bruxa sabia que desdo Javali... o(a) guerreiro(a)" + name + " iria gerar prosperidade para todos do reino!###\n");
+
+        System.out.println("\n *-- Elizabeth a bruxa foi até" + name + " que estaria saindo do calabouço --*\n");
+        System.out.println("[Elizabeth - Bruxa] - Encontrei você!\n");
+        System.out.println("(" + name + ") - Ué, Mas quem é a senhora! eu nunca te vi no reino antes! E o que a senhora quer comigo?\n");
+        System.out.println("[Elizabeth - Bruxa] - O reino está em perigo! eu sou Elizabeth ''A MAGA SUPREMA''! Precisamos de você, o povo precisa de você!\n ");
+        System.out.println("[Elizabeth - Bruxa] - O ladrão que roubou sua esfera é Matidig, o meu aprendinz, ele roubou o livro de feitiços e vai invocar ASTAROTH!\n");
+        System.out.println("(" + name + ") - Pera ai!!!  Quem é Astaroth? E por que eu tenho que que ir enfrentar ele? num vo, aaahhh, mais num vo mesmo!\n");
+        System.out.println("[Elizabeth - Bruxa] - Você está destinado a deter Astaroth!\n");
+        System.out.println("(" + name + ") - Vamo lá né, fazer o que... logo hojé que sabado vei...\n");
+
+        System.out.println(" *-- " + name + " e Elizabeth foram até onde estaria Matidig, num local desertico, apos chegarem lá, se deparam com Matidig morto por Astaroth--*");
+        System.out.println("*-- Matidig já havia invocado Astaroth com a esfera de " + name + " --*\n");
+
+        System.out.println("[Elizabeth - Bruxa] - Nãoooooooo, Matidig! SEU MONSTRO!\n");
+
+        System.out.println("[ASTAROTH] - ARKINE MAKITU MAYKARA ZUBABA! HAHAHAHA ELE FOI UM SERVO FIEL!\n");
+
+        System.out.println("*-- Elizabeth vai para cima de Astaroth, maspor ter seu livro de feitiços roubados, ela não teria magia o suficiente para confronta-lo.");
+        System.out.println("Então Astaroth ultliza sua espada para perfurar Elizabeth,Mas " + name + " impedi, e logo Astaroth parte para cima de" + name + " e começa uma batalha--*");
+
+        System.out.println(name + " Luta com Astaroth");
+
         switch (name) {
             case "Anna":
                 dueloFinal.dueloAnna(60, 1000);
@@ -988,11 +1032,28 @@ public class RpgPrincipal {
                 + ".\n"
                 + ".\n");
         System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
-        System.out.println("[Elizabeth] " + name + " está fraca, é necessário fazer uma magia para que fique mais forte e consiga derrotar Astaroth!\n"
-                + "através das forças das bruxas da família, vou deixa-lo mais forte para conseguir derrotar Astaroth."
-                + ".\n"
-                + ".\n"
-                + ".\n");
+        System.out.println("[Elizabeth] - " + name + ", você ainda não despertou seu verdadeiro poder , vou realizar minha ultima magia,\n ");
+        System.out.println("para fazer com que você desperte suas habilidades aprimoradas e consiga derrotar Astaroth!\n");
+        System.out.println("*-- Elizibeth começa fazer sua magia final e começa a recitar versos de sua magia proibida --*");
+        System.out.println("[Elizabeth] - UGOKU GAI VEGITAI UGOKU GAI VEGITA, ANANATRAK GUDVASSE HEDHASSE ");
+        System.out.println("*-- Elizabeth se ajoelha e ergue suas mãos aos ceus, Astaroth tentaa impedirr a magia, mais um fecho gigante de luz o accerta.");
+        System.out.println("O mesmo fecho de luz levita Eizabeth, e a mesma conversa com os seres celestiais!");
+        System.out.println("*-- Celestial começa a falar com Elizabeth --*");
+        System.out.println("(CELESTIAL) - ?????????!!!!!?!??!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!??!?!!?");
+        System.out.println("[Elizabeth] - Eu estou entregando a minha vida para fortalecert o alido e enfraquecer a besta fera!\n");
+        
+        System.out.println("(CELESTIAL) ?????!?!?!?!?!?!??!?!?!?!?!?!?!?!?\n");
+        
+        System.out.println("[Elizabeth] - EU aceito!\n");
+        
+        System.out.println("*-- Então um fecho de luz atingiria Astaroth fazendo com que seus poderes diminuissem, uma labareda de fogo desceria do céu."
+                + "\n Logo então o fogo se envolveria com o corpo de "+ name + " e faria os ferimentos se curarem e dar mais poder--*\n");
+        System.out.println("*-- " + name + " Se levanta e enfrenta Astaroth novamente e cheio de furia! \n");
+        
+        System.out.println(name + " VAI COM TUDO PRA CIMA DE ASTAROTH\n");
+        
+        System.out.println("("+name+") - TA NA HORA DE BOTAR O NENEM PRA DORMIR!");
+        
         switch (name) {
             case "Anna":
                 dueloFinal2.dueloAnnaFinal(1250, 1000);
@@ -1010,5 +1071,7 @@ public class RpgPrincipal {
                 dueloFinal2.dueloYvennaFinal(1232, 1000);
                 break;
         }
+        System.out.println("Apos a luta com Astaroth, o reino fica em paz...");
+        System.out.println("FIM DO JOGO");
     }
 }
