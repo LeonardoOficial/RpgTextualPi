@@ -1,257 +1,227 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package RPG;
 
-/**
- *
- * @author csnas
- */
-public class dueloGuarda {
+//**
+//* @author leonardo.ssantos60
+public class dueloFinal {
 
-    static int dueloAnna(int hpAnna, int hpInimigo) {
-        System.out.println("=-=-=-=-=-=");
+    static int dueloAnna(int hpAnna, int hpAstaroth) {
+        System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Anna " + hpAnna);
-        System.out.println("HP \n Guarda " + hpInimigo);
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("HP \n ASTAROTH  " + hpAstaroth);
+        System.out.println("=-=-=-=-=-=\n");
 
-        while (hpAnna > 0 && hpInimigo > 0) {
-
+        while (hpAnna > 0 && hpAstaroth > 0) {
             switch (Anna.habilidades()) {
                 case 1:
-                    System.out.println("Anna esfaqueou o Guarda");
-                    hpInimigo -= 20;
+                    System.out.println("Anna esfaqueou o Ladrão! \n--SÓ FEZ CARINHO--");
+                    hpAstaroth -= 20;
                     break;
                 case 2:
-                    System.out.println("Anna acertou o Guarda com uma flecha");
-                    hpInimigo -= 12;
+                    System.out.println("Anna acertou o Ladrão com uma flecha! \n-- NÃO DEU DANO O SUFICIENTE!--");
+                    hpAstaroth -= 12;
                     break;
                 case 3:
-                    System.out.println("O Guarda foi atingido pelas flechas de Anna!");
-                    hpInimigo -= 15;
+                    System.out.println("O Astaroth foi atingido pelas flechas de Anna! \n--MAS NÃO ESTA CAUSANDO EFEITO--");
+                    hpAstaroth -= 15;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA");
+                    System.out.println("OPÇÃO INVALIDA!-- VOCÊ ACABA DE SENTENCIAR A PROPRIA MORTE");
                     break;
             }
-            if (hpInimigo > 0) {
+            switch (Astaroth.habilidades()) {
+                case 1:
 
-                switch (Guarda.habilidades()) {
-                    case 1:
-                        System.out.println("O Guarda te acertou um soco!");
-                        hpAnna -= 10;
-                        break;
-                    case 2:
-                        System.out.println("O Guarda deu um triplo bye bye bird!");
-                        hpAnna -= 12;
-                        break;
-                }
-            } else {
-                System.out.println("Guarda derrotado!!!");
-                break;
+                    System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
+                    hpAnna -= 1000;
+                    break;
+                case 2:
+                    System.out.println("[ASTAROTH]\n utilizou o FULGOR NEGRO");
+                    System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                    hpAnna -= 2000;
+                    break;
             }
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp \nAnna " + hpAnna);
-            System.out.println("Hp \nGuarda " + hpInimigo);
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpAnna;
     }
 
-    static int dueloFloki(int hpFloki, int hpInimigo) {
-        System.out.println("=-=-=-=-=-=");
+    static int dueloFloki(int hpFloki, int hpAstaroth) {
+        System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Floki " + hpFloki);
-        System.out.println("HP \n Guarda " + hpInimigo);
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("HP \n ASTAROTH " + hpAstaroth);
+        System.out.println("=-=-=-=-=-=\n");
 
-        while (hpFloki > 0 && hpInimigo > 0) {
+        while (hpFloki > 0 && hpAstaroth > 0) {
 
             switch (Floki.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda caiu com os tremores causados por Floki!");
-                    hpInimigo -= 12;
+                    System.out.println("ASTAROTH nem se mexeu com os tremores causados por Floki!");
+                    hpAstaroth -= 12;
                     break;
                 case 2:
-                    System.out.println("Floki deu uma machadada no Guarda!");
-                    hpInimigo -= 15;
+                    System.out.println("Floki deu uma machadada em ASTAROTH! MAS, SÓ FEZ CARINHO");
+                    hpAstaroth -= 15;
                     break;
                 case 3:
-                    System.out.println("Floki recuperou parte da vida!");
+                    System.out.println("Floki recuperou parte da vida! PIOR ESCOLHA QUE VOCÊ JÁ FEZ!");
                     hpFloki += 10;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA");
+                    System.out.println("OPÇÃO INVALIDA! VOCÊ ACABA DE SENTENCIAR A PROPRIA MORTE");
                     break;
             }
-            if (hpInimigo > 0) {
+            if (hpAstaroth > 0) {
 
-                switch (Guarda.habilidades()) {
+                switch (Astaroth.habilidades()) {
                     case 1:
-                        System.out.println("O Guarda te acertou um soco!");
-                        hpFloki -= 10;
+                        System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
+                        System.out.println("s");
+                        hpFloki -= 1000;
                         break;
                     case 2:
-                        System.out.println("O Guarda deu um triplo bye bye bird!");
-                        hpFloki -= 12;
+                        System.out.println("[ASTAROTH]\n utilizou o FULGOR NEGRO");
+                        System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        hpFloki -= 2000;
                         break;
                 }
-            } else {
-                System.out.println("Guarda derrotado!!!");
-                break;
             }
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp \nFloki " + hpFloki);
-            System.out.println("Hp \nGuarda " + hpInimigo);
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpFloki;
     }
 
-    static int dueloHalroc(int hpHalroc, int hpInimigo) {
-        System.out.println("=-=-=-=-=-=");
+    static int dueloHalroc(int hpHalroc, int hpAstaroth) {
+        System.out.println("\n=-=-=-=-=-=");
         System.out.println("HP \n Harolc " + hpHalroc);
-        System.out.println("HP \n Guarda " + hpInimigo);
-        System.out.println("=-=-=-=-=-=");
+        System.out.println("HP \n ASTAROTH " + hpAstaroth);
+        System.out.println("=-=-=-=-=-=\n");
 
-        while (hpHalroc > 0 && hpInimigo > 0) {
+        while (hpHalroc > 0 && hpAstaroth > 0) {
 
             switch (Halroc.habilidades()) {
                 case 1:
-                    System.out.println("Halroc deu um corte rápido no Guarda!");
-                    hpInimigo -= 12;
+                    System.out.println("Halroc deu um corte rápido em ASTAROTH! MAS O CORTE NÃO CHEGOU A FERI-LO");
+                    hpAstaroth -= 12;
                     break;
                 case 2:
-                    System.out.println("Halroc deu um corte sombrio no Guarda!");
-                    hpInimigo -= 15;
+                    System.out.println("Halroc deu um corte sombrio no ASTAROTH! O CORTE FOI PROFUNDO, MAS NÃO O SUFICIENTE");
+                    hpAstaroth -= 15;
                     break;
                 case 3:
-                    System.out.println("O Guarda é ferido pela explosão da bomba!");
-                    hpInimigo -= 12;
+                    System.out.println("O ASTAROTH é ferido pela explosão da bomba! MAS O DANO É MINIMO");
+                    hpAstaroth -= 12;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA");
+                    System.out.println("OPÇÃO INVALIDA! VOCÊ ACABOU DE SENTENCIAR SUA MORTE");
                     break;
             }
-            if (hpInimigo > 0) {
 
-                switch (Guarda.habilidades()) {
+            if (hpAstaroth > 0) {
+
+                switch (Astaroth.habilidades()) {
                     case 1:
-                        System.out.println("O Guarda te acertou um soco!");
-                        hpHalroc -= 10;
+                        System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
+                        hpHalroc -= 1000;
                         break;
                     case 2:
-                        System.out.println("O Guarda deu um triplo bye bye bird!");
-                        hpHalroc -= 12;
+                        System.out.println("[ASTAROTH]\n ultilizou o FULGOR NEGRO");
+                        System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        hpHalroc -= 2000;
                         break;
                 }
-            } else {
-                System.out.println("Guarda derrotado!!!");
-                break;
             }
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp \nHalroc " + hpHalroc);
-            System.out.println("Hp \nGuarda " + hpInimigo);
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpHalroc;
     }
 
-    static int dueloYruan(int hpYruan, int hpInimigo) {
+    static int dueloYruan(int hpYruan, int hpAstaroth) {
         System.out.println("=-=-=-=-=-=");
         System.out.println("HP \n Yruan " + hpYruan);
-        System.out.println("HP \n Guarda " + hpInimigo);
+        System.out.println("HP \n ASTAROTH " + hpAstaroth);
         System.out.println("=-=-=-=-=-=");
 
-        while (hpYruan > 0 && hpInimigo > 0) {
+        while (hpYruan > 0 && hpAstaroth > 0) {
 
             switch (Yruan.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda foi eletrificado!");
-                    hpInimigo -= 15;
+                    System.out.println("ASTAROTH foi eletrificado! MAS, A CARGA NÃO FOI SUFICIENTE PARA DERRUBAR ASTAROTH");
+                    hpAstaroth -= 15;
                     break;
                 case 2:
-                    System.out.println("O Guarda foi antigido por Yruan!");
-                    hpInimigo -= 20;
+                    System.out.println("O Guarda foi antigido por Yruan! O RAIO CAIRIA EM ASTAROTH, MAS NÃO O MATAVA");
+                    hpAstaroth -= 20;
                     break;
                 case 3:
-                    System.out.println("Yruan golpeia o Guarda!");
-                    hpInimigo -= 12;
+                    System.out.println("Yruan golpeia o Guarda! ASTAROTH APENAS SENTIU COCEGAS");
+                    hpAstaroth -= 12;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA");
+                    System.out.println("OPÇÃO INVALIDA! PIOR ESCLHA QUE VOCÊ PODERIA TER FEITO");
                     break;
             }
-            if (hpInimigo > 0) {
+            if (hpAstaroth > 0) {
 
-                switch (Guarda.habilidades()) {
+                switch (Astaroth.habilidades()) {
                     case 1:
-                        System.out.println("O Guarda te acertou um soco!");
-                        hpYruan -= 10;
+                        System.out.println("[ASTAROTH]\n fez um corte com a CEIFADORA DE ALMAS");
+                        System.out.println("s");
+                        hpYruan -= 1000;
                         break;
                     case 2:
-                        System.out.println("O Guarda deu um triplo bye bye bird!");
-                        hpYruan -= 12;
+                        System.out.println("[ASTAROTH]\n utilizou o FULGOR NEGRO");
+                        System.out.println("[ASTAROTH] levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        hpYruan -= 2000;
                         break;
                 }
-            } else {
-                System.out.println("Guarda derrotado!!!");
-                break;
             }
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp \nYruan " + hpYruan);
-            System.out.println("Hp \nGuarda " + hpInimigo);
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
         }
         return hpYruan;
     }
 
-    static int dueloYvenna(int hpYvenna, int hpInimigo) {
+    static int dueloYvenna(int hpYvenna, int hpAstaroth) {
         System.out.println("=-=-=-=-=-=");
         System.out.println("HP \n Yvenna " + hpYvenna);
-        System.out.println("HP \n Guarda " + hpInimigo);
+        System.out.println("HP \n ASTAROTH " + hpAstaroth);
         System.out.println("=-=-=-=-=-=");
 
-        while (hpYvenna > 0 && hpInimigo > 0) {
+        while (hpYvenna > 0 && hpAstaroth > 0) {
 
             switch (Yvenna.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda foi acertado pela pedra!");
-                    hpInimigo -= 20;
+                    System.out.println("O Guarda foi acertado pela pedra!NÃO CAUSOU MUITO EFEITO");
+                    hpAstaroth -= 20;
                     break;
                 case 2:
-                    System.out.println("Yvenna corta o Guarda com sua lança!");
-                    hpInimigo -= 15;
+                    System.out.println("Yvenna  faz um corte em ASTAROTH com sua lança! MAS O CORTE NÃO CHEGOU A SER PROFUNDO");
+                    hpAstaroth -= 15;
                     break;
                 case 3:
-                    System.out.println("O Guarda é atingido pelos espinhos!");
-                    hpInimigo -= 12;
+                    System.out.println("ASTAROTH é atingido pelos espinhos! MAS APENAS FAZ CARINHO");
+                    hpAstaroth -= 12;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA");
+                    System.out.println("OPÇÃO INVALIDA!PIOR ESCOLHA QUE VOCÊ JÁ FEZ");
                     break;
             }
-            if (hpInimigo > 0) {
+            if (hpAstaroth > 0) {
 
                 switch (Guarda.habilidades()) {
                     case 1:
-                        System.out.println("O Guarda te acertou um soco!");
-                        hpYvenna -= 10;
+                        System.out.println("ASTAROTH\n fez um corte com a CEIFADORA DE ALMAS");
+                        System.out.println("s");
+                        hpYvenna -= 1000;
                         break;
                     case 2:
-                        System.out.println("O Guarda deu um triplo bye bye bird!");
-                        hpYvenna -= 12;
+                        System.out.println("ASTAROTH\n utilizou o FULGOR NEGRO");
+                        System.out.println("ASTAROTH levanta seu braço e uma esfera negra é criada no recinto,deixando tudo escuro como o vazio");
+                        hpYvenna -= 2000;
                         break;
                 }
-            } else {
-                System.out.println("Guarda derrotado!!!");
-                break;
             }
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
-            System.out.println("Hp \nYvenna " + hpYvenna);
-            System.out.println("Hp \nGuarda " + hpInimigo);
-            System.out.println("=-=-=-=-=-=-=-=-=-=-=");
+            
         }
-        return hpYvenna;
-    }
+    return hpYvenna;
+}
 }
