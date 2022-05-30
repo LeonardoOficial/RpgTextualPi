@@ -806,187 +806,180 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 + "[2] HOMEM DE CABELO ENCARACOLADO\n");
         ladrao = input.nextInt();
 
-        while ((ladrao > 2) || (ladrao == 1)) {
-            if (ladrao == 1) {
-                System.out.println("Você acusou a pessoa errada e agora sofrerá as consequências");
-                System.out.println("Os guardas estão vindo, nem adianta correr");
-                System.out.println("[GUARDA] - Venha, você será preso no calabouço");
-                break;
-            } else {
-                System.out.println("OPERAÇÃO INVÁLIDA\n"
-                        + "digite uma opção válida\n"
-                        + "[1] HOMEM DE PRETO\n"
-                        + "[2] HOMEM DE CABELO ENCARACOLADO\n");
-                ladrao = input.nextInt();
-            }
-        }
-        System.out.println("Você encontrou o ladrão, lute para recuperar seu artefato");
-        TimeUnit.SECONDS.sleep(3);
-        
-        
-        switch (name) {
-                case "Anna":
-                    dueloLadrao.dueloAnna(60, 150);
-                    break;
-                case "Floki":
-                    dueloLadrao.dueloFloki(60, 150);
-                    break;
-                case "Harolc":
-                    dueloLadrao.dueloHalroc(60, 150);
-                    break;
-                case "Yruan":
-                    dueloLadrao.dueloYruan(60, 150);
-                    break;
-                case "Yvenna":
-                    dueloLadrao.dueloYvenna(60, 150);
-                    break;
-            }
-        
-        System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
-        TimeUnit.SECONDS.sleep(3);
-        
-        
-        
-
-        int escolha1, escolha2;
-        String charada;
-
-        System.out.println("Você foi preso no calabouço :( ");
-        System.out.println("Por sorte você conseguiu roubar dos guardas o mapa do calabouço sem que eles "
-                + "percebessem!!!!");
-        TimeUnit.SECONDS.sleep(5);
-
-        do {
-            System.out.println("Quer dar uma olhadinha no mapa?");
-            System.out.println("[1] SIM");
-            System.out.println("[2] NÃO");
-            escolha1 = input.nextInt();
-
-            switch (escolha1) {
+        OUTER:
+        while (ladrao >=3) {
+            switch (ladrao) {
                 case 1:
-                    System.out.println("#==============================|| ||\n"
-                            + "#         E N T R A D A        || ||\n"
-                            + "||E||#=========================|| ||\n"
-                            + "||S||#                         || ||\n"
-                            + "||C||#=========================|| ||\n"
-                            + "||A||#     T U N Ú E L              \n"
-                            + "||D||#=========================|| ||\n"
-                            + "||A||#      P O R T A L             \n"
-                            + "||R||#     S E C R E T O            \n"
-                            + "||I||#=========================|| ||\n"
-                            + "||A||#=========================|| ||\n"
-                            + "######=========================|| ||");
+                    System.out.println("Você acusou a pessoa errada e agora sofrerá as consequências");
+                    System.out.println("Os guardas estão vindo, nem adianta correr");
+                    System.out.println("[GUARDA] - Venha, você será preso no calabouço");
                     break;
                 case 2:
-                    System.out.println("Vai ficar aqui até quando ... ");
-                    System.out.println(".\n"
+                    System.out.println("Você encontrou o ladrão, lute para recuperar seu artefato");
+                    TimeUnit.SECONDS.sleep(3);
+                    switch (name) {
+                        case "Anna":
+                            dueloLadrao.dueloAnna(60, 150);
+                            System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+                            TimeUnit.SECONDS.sleep(3);
+                            break;
+                        case "Floki":
+                            dueloLadrao.dueloFloki(60, 150);
+                            System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+                            TimeUnit.SECONDS.sleep(3);
+                            break;
+                        case "Harolc":
+                            dueloLadrao.dueloHalroc(60, 150);
+                            System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+                            TimeUnit.SECONDS.sleep(3);
+                            break;
+                        case "Yruan":
+                            dueloLadrao.dueloYruan(60, 150);
+                            System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+                            TimeUnit.SECONDS.sleep(3);
+                            break;
+                        case "Yvenna":
+                            dueloLadrao.dueloYvenna(60, 150);
+                            System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
+                            TimeUnit.SECONDS.sleep(3);
+                            break;
+                    }   
+                default:
+                    System.out.println("OPERAÇÃO INVÁLIDA\n"
+                            + "digite uma opção válida\n"
+                            + "[1] HOMEM DE PRETO\n"
+                            + "[2] HOMEM DE CABELO ENCARACOLADO\n");
+                    ladrao = input.nextInt();
+                    break;
+            }
+        }
+            int escolha1, escolha2;
+            String charada;
+            System.out.println("Você foi preso no calabouço :( ");
+            System.out.println("Por sorte você conseguiu roubar dos guardas o mapa do calabouço sem que eles "
+                    + "percebessem!!!!");
+            TimeUnit.SECONDS.sleep(5);
+            do {
+                System.out.println("Quer dar uma olhadinha no mapa?");
+                System.out.println("[1] SIM");
+                System.out.println("[2] NÃO");
+                escolha1 = input.nextInt();
+                
+                switch (escolha1) {
+                    case 1:
+                        System.out.println("#==============================|| ||\n"
+                                + "#         E N T R A D A        || ||\n"
+                                + "||E||#=========================|| ||\n"
+                                + "||S||#                         || ||\n"
+                                + "||C||#=========================|| ||\n"
+                                + "||A||#     T U N Ú E L              \n"
+                                + "||D||#=========================|| ||\n"
+                                + "||A||#      P O R T A L             \n"
+                                + "||R||#     S E C R E T O            \n"
+                                + "||I||#=========================|| ||\n"
+                                + "||A||#=========================|| ||\n"
+                                + "######=========================|| ||");
+                        break;
+                    case 2:
+                        System.out.println("Vai ficar aqui até quando ... ");
+                        System.out.println(".\n"
+                                + ".\n"
+                                + ".\n");
+                        break;
+                    default:
+                        System.out.println("Opção inválida");
+                        break;
+                }
+                
+            } while (escolha1 == 2);
+            do {
+                System.out.println("Olhando para o mapa, aparentemente você precisa chegar"
+                        + "até o portal secreto, qual caminho irá seguir????");
+                System.out.println("[1] ESCADARIA");
+                System.out.println("[2] TÚNEL");
+                escolha2 = input.nextInt();
+                
+                switch (escolha2) {
+                    case 1:
+                        System.out.println("Boa sorte com essa enorme escada");
+                        System.out.println(".");
+                        System.out.println(".");
+                        System.out.println(".");
+                        System.out.println("você chegou ao fim, veja o que tem a frente ...");
+                        System.out.println("Uma enorme parede, parece que não vai ser por aqui que "
+                                + "você vai sair.");
+                        break;
+                    case 2:
+                        System.out.println("Será que há luz no fim do túnel?????");
+                        System.out.println("Ande mais um pouquinho ... ");
+                        System.out.println(".");
+                        System.out.println(".");
+                        System.out.println(".");
+                        System.out.println("AAAAA, parece que você encontrou uma porta ... pena que"
+                                + " está trancada, te desejo sorte para abrir hahahaha");
+                        break;
+                    default:
+                        System.out.println("Opção inválida");
+                        break;
+                }
+                
+            } while (escolha2 != 2);
+            System.out.println("Veja, na porta há um pergaminho, talvez tenha alguma dica de como "
+                    + "abrir a porta\n");
+            System.out.println("@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n"
+                    + "|Vc está há um passo de conseguir atravessar |\n"
+                    + "|o portal secreto, para isto é necessário que|\n"
+                    + "|vc diga a senha em voz alta. Há uma dica no |\n"
+                    + "|final do pergaminho.                        |\n"
+                    + "|                                            |\n"
+                    + "|                                            |\n"
+                    + "|                                            |\n"
+                    + "|                Boa sorte!!!                |\n"
+                    + "|                                            |\n"
+                    + "|                                            |\n"
+                    + "|                                            |\n"
+                    + "|                                            |\n"
+                    + "|                                            |\n"
+                    + "|Dica:Eu nunca fui, mas sempre serei. Ninguém|\n"
+                    + "|  nunca me viu, e nunca verão. Ainda assim, |\n"
+                    + "|  sou a esperança de todos. Quem sou eu?    |\n"
+                    + "@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n");
+            TimeUnit.SECONDS.sleep(5);
+            System.out.println("E agora qual a senha?");
+            charada = input.next();
+            while (!charada.equalsIgnoreCase("futuro")) {
+                
+                System.out.println("Não é isso. Tente denovo");
+                System.out.println("Diga-me novamente o que a senha:");
+                charada = input.next();
+            }   System.out.println("Finalmente você acertou. Parabéns");
+            System.out.println("o portal está se abrindo ...");
+            System.out.println(".\n"
+                    + ".\n"
+                    + ".\n");
+            System.out.println("O portal se abriu, logo a frente há uma saída. Vá em "
+                    + "frente e tente encontrar a Elizabeth e recupere o seu artefato."
+                    + ".\n"
+                    + ".\n"
+                    + ".\n");
+            System.out.println("E para a surpresa de todos, está esfera presente que" + name + " recebeu do rei como recompesa, tem grande propósito!\n"
+                    + "Está esfera acumula-se todo o poder da criatura mais poderosa que já existiu na terra... ASTAROTH. A família de Gerald, tem linhagem com os mais antigos bruxos\n"
+                    + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
+                    + "Lógico que também preveram que iria chegar um guerreiro corajoso e com o coração puro!\n"
+                    + "Que a único intuito deste guerreiro é prosperidade em todos os reinos, mas nada.\n"
+                    + "[Elizabeth - Bruxa] - " +name+ " Você chegou até aqui e isso está mais do que provado, que seu destino é derrotar Astaroth e você se tornar o guerreiro\n"
+                            + "mais poderoso de todos os reinos.\n"
+                            + "Lembre-se que a sua arma, não foi ganhada em vão...\n"
+                            + ".\n"
+                            + ".\n"
+                            + ".\n"
+                            + "Chegou a hora de lutar com Astaroth!\n"
+                            + ".\n"
                             + ".\n"
                             + ".\n");
-                    break;
-                default:
-                    System.out.println("Opção inválida");
-                    break;
-            }
-
-        } while (escolha1 == 2);
-
-        do {
-            System.out.println("Olhando para o mapa, aparentemente você precisa chegar"
-                    + "até o portal secreto, qual caminho irá seguir????");
-            System.out.println("[1] ESCADARIA");
-            System.out.println("[2] TÚNEL");
-            escolha2 = input.nextInt();
-
-            switch (escolha2) {
-                case 1:
-                    System.out.println("Boa sorte com essa enorme escada");
-                    System.out.println(".");
-                    System.out.println(".");
-                    System.out.println(".");
-                    System.out.println("você chegou ao fim, veja o que tem a frente ...");
-                    System.out.println("Uma enorme parede, parece que não vai ser por aqui que "
-                            + "você vai sair.");
-                    break;
-                case 2:
-                    System.out.println("Será que há luz no fim do túnel?????");
-                    System.out.println("Ande mais um pouquinho ... ");
-                    System.out.println(".");
-                    System.out.println(".");
-                    System.out.println(".");
-                    System.out.println("AAAAA, parece que você encontrou uma porta ... pena que"
-                            + " está trancada, te desejo sorte para abrir hahahaha");
-                    break;
-                default:
-                    System.out.println("Opção inválida");
-                    break;
-            }
-
-        } while (escolha2 != 2);
-
-        System.out.println("Veja, na porta há um pergaminho, talvez tenha alguma dica de como "
-                + "abrir a porta\n");
-        System.out.println("@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n"
-                + "|Vc está há um passo de conseguir atravessar |\n"
-                + "|o portal secreto, para isto é necessário que|\n"
-                + "|vc diga a senha em voz alta. Há uma dica no |\n"
-                + "|final do pergaminho.                        |\n"
-                + "|                                            |\n"
-                + "|                                            |\n"
-                + "|                                            |\n"
-                + "|                Boa sorte!!!                |\n"
-                + "|                                            |\n"
-                + "|                                            |\n"
-                + "|                                            |\n"
-                + "|                                            |\n"
-                + "|                                            |\n"
-                + "|Dica:Eu nunca fui, mas sempre serei. Ninguém|\n"
-                + "|  nunca me viu, e nunca verão. Ainda assim, |\n"
-                + "|  sou a esperança de todos. Quem sou eu?    |\n"
-                + "@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n");
-        
-        TimeUnit.SECONDS.sleep(5);
-
-        System.out.println("E agora qual a senha?");
-        charada = input.next();
-
-        while (!charada.equalsIgnoreCase("futuro")) {
-
-            System.out.println("Não é isso. Tente denovo");
-            System.out.println("Diga-me novamente o que a senha:");
-            charada = input.next();
-        }
-        System.out.println("Finalmente você acertou. Parabéns");
-        System.out.println("o portal está se abrindo ...");
-        System.out.println(".\n"
-                + ".\n"
-                + ".\n");
-        System.out.println("O portal se abriu, logo a frente há uma saída. Vá em "
-                + "frente e tente encontrar a Elizabeth e recupere o seu artefato."
-                + ".\n"
-                + ".\n"
-                + ".\n");
-
-          System.out.println("E para a surpresa de todos, está esfera presente que" + name + " recebeu do rei como recompesa, tem grande propósito!\n"
-                + "Está esfera acumula-se todo o poder da criatura mais poderosa que já existiu na terra... ASTAROTH. A família de Gerald, tem linhagem com os mais antigos bruxos\n"
-                + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
-                + "Lógico que também preveram que iria chegar um guerreiro corajoso e com o coração puro!\n"
-                + "Que a único intuito deste guerreiro é prosperidade em todos os reinos, mas nada.\n"
-                + "[Elizabeth - Bruxa] - " +name+ " Você chegou até aqui e isso está mais do que provado, que seu destino é derrotar Astaroth e você se tornar o guerreiro\n"
-                        + "mais poderoso de todos os reinos.\n"
-                        + "Lembre-se que a sua arma, não foi ganhada em vão...\n"
-                        + ".\n"
-                        + ".\n"
-                        + ".\n"
-                        + "Chegou a hora de lutar com Astaroth!\n"
-                        + ".\n"
-                        + ".\n"
-                        + ".\n");
-                        
-        
-        System.out.println("Luta com astaroth");
-        
-        switch(name){
-             case "Anna":
+            System.out.println("Luta com astaroth");
+            switch(name){
+                case "Anna":
                     dueloFinal.dueloAnna(60, 1000);
                     break;
                 case "Floki":
@@ -1001,23 +994,18 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 case "Yvenna":
                     dueloFinal.dueloYvenna(60, 1000);
                     break;
-        }
-        System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!\n"
-                + ".\n"
-                + ".\n"
-                + ".\n");
-       System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
-        System.out.println("[Elizabeth] " + name + " está fraca, é necessário fazer uma magia para que fique mais forte e consiga derrotar Astaroth!\n"
-                + "através das forças das bruxas da família, vou deixa-lo mais forte para conseguir derrotar Astaroth."
-                + ".\n"
-                + ".\n"
-                + ".\n" );
-
-        
-        //Batalhaa depois da historia 
-        
-        switch (name){
-            case "Anna":
+            }   System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!\n"
+                    + ".\n"
+                    + ".\n"
+                    + ".\n");
+            System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
+            System.out.println("[Elizabeth] " + name + " está fraca, é necessário fazer uma magia para que fique mais forte e consiga derrotar Astaroth!\n"
+                    + "através das forças das bruxas da família, vou deixa-lo mais forte para conseguir derrotar Astaroth."
+                    + ".\n"
+                    + ".\n"
+                    + ".\n" );
+            switch (name){
+                case "Anna":
                     dueloFinal2.dueloAnnaFinal(1250, 1000);
                     break;
                 case "Floki":
@@ -1032,7 +1020,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 case "Yvenna":
                     dueloFinal2.dueloYvennaFinal(1232, 1000);
                     break;
+            }
         }
-        
-    }
+}
 }
