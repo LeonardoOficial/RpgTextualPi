@@ -12,7 +12,7 @@ public class RpgPrincipal {
         int escolha = 0, menu = 0;
         String opcao;
         String personagem;
-        int carisma = 10;
+        
         String name = null;
 
         System.out.println("                                                                           \n"
@@ -245,7 +245,6 @@ public class RpgPrincipal {
                             + "Qual é seu nome?\n"
                             + "Meu nome é " + name + "!\n"
                             + "[Mensageiro] -- Vejo que você é de longe, o Rei vai adorar te conhecer, vamos para o castelo, lá você irá conhcecer o rei pessoalmente!\n");
-                    carisma = carisma + 2;
                     TimeUnit.SECONDS.sleep(6);
                     System.out.println("*-- " + name + " e o mensageiro foram ao castelo, após chegarem, vão de encontro com o rei --*");
                     System.out.println("[Mensageiro] -- Com licença meu Rei, trouxe esse jovem aventureiro para conhecer o senhor, creio que ele poderá cumprir a missão imposta por vossa majestade.\n");
@@ -310,18 +309,6 @@ public class RpgPrincipal {
                     System.out.println("[Mensageiro]-- Sua missão é ir até a floresta de Dean e descobrir o paradeiro do javali e acabar com ele!\n");
                     TimeUnit.SECONDS.sleep(3);
 
-                    System.out.println("Você acabou de receber +2 Pontos de carisma com a cidade, com esses pontos de carismas você consegue ter mais vantagens em algumas missões\n"
-                            + " tente não recusar missões pois você pode acabar perdendo esses pontos, isso aumentará a dificuldade em alguns desafios\n");
-                    TimeUnit.SECONDS.sleep(4);
-
-                    System.out.println("Quer ver seu nível de carisma?");
-                    System.out.println("[1] - Sim");
-                    System.out.println("[2] - Não");
-                    escolha = input.nextInt();
-                    if (escolha == 1) {
-                        System.out.println("Seu atual nível de Carisma com a cidade é: " + carisma);
-                        break;
-                    } else if (escolha == 2) {
                         break;
 
                     }
@@ -360,10 +347,6 @@ public class RpgPrincipal {
                     System.out.println("Chegando na Floresta você deparou com uma pegada de javali e o local todo em cinza\n");
                     TimeUnit.SECONDS.sleep(6);
 
-                    System.out.println("Você perdeu -2 Pontos de carisma, se seu carisma chegar a 0, você poderá morrer por sofrer várias pedradas ao longo do caminho,\n"
-                            + " Suba seu carismo para ganhar vantagens nas missões.\n");
-                    carisma = carisma - 2;
-                    System.out.println("Seu atual nivel de carisma é: " + carisma);
                     break;
             }
         } while (escolha != 1 && escolha != 2);
@@ -626,6 +609,13 @@ public class RpgPrincipal {
                     System.out.println("(" + name + "): Que porqueira é essa!");
                 }
                 break;
+            default:
+                System.out.println("\n[Dono da Taverna] - Resposta errada! beba um gole!");
+                System.out.println("*--" + name + " toma um gole da cachaça--*");
+                avatar = avatar + 1;
+                if (avatar == 1) {
+                    System.out.println("(" + name + "): Que porqueira é essa!");
+                    break;
         }
         System.out.println("\n\n[Dono da Taverna] - Segunda Pergunta: ");
         TimeUnit.SECONDS.sleep(3);
@@ -747,14 +737,13 @@ public class RpgPrincipal {
         }
         if (donoDoBar > avatar) {
             System.out.println("\n*--Parabéns! Você Ganhou!--*\n");
-            carisma = carisma + 10;
+
         } else {
             System.out.println("*--Fracassado! Você é um(a) cachaceiro(a) de primeira, bebeu todas e perdeu--*");
-            carisma = carisma - 10;
+
         }
 
-        // desafio do paradeiro do premio
-      
+        // desafio do paradeiro       
         
         System.out.println(name + ": É, realmente foi muito bom ter ido a taberna!\n"
                 + "[DESCONHECIDO -]" + name + ", vou embora! já está tarde!\n"
@@ -1071,4 +1060,5 @@ public class RpgPrincipal {
         System.out.println("Após a luta com Astaroth, o reino fica em paz...");
         System.out.println("FIM DO JOGO");
     }
+}
 }
