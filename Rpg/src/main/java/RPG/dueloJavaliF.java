@@ -18,11 +18,11 @@ public class dueloJavaliF {
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Anna acertou o Guarda com uma flecha");
+                    System.out.println("Anna acertou o Javali Flamenjante com uma flecha");
                     hpInimigo -= 12;
                     break;
                 case 3:
-                    System.out.println("O Guarda foi atingido pelas flechas de Anna!");
+                    System.out.println("O Javali Flamejante foi atingido pelas flechas de Anna!");
                     hpInimigo -= 15;
                     break;
                 default:
@@ -230,7 +230,7 @@ public class dueloJavaliF {
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Yvenna corta o Guarda com sua lança!");
+                    System.out.println("Yvenna corta o Javali Flamejante com sua lança!");
                     hpInimigo -= 15;
                     break;
                 case 3:

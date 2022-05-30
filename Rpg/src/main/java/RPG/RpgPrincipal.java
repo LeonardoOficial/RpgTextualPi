@@ -46,7 +46,7 @@ public class RpgPrincipal {
             System.out.print("          [1] JOGAR          \n");
             System.out.print("          [2] CRÉDITOS       \n");
             System.out.print("          [3] INSTRUÇOES       \n");
-            System.out.print("          [4] HISTóRIA       \n ");
+            System.out.print("          [4] HISTÓRIA       \n ");
             System.out.print("=============================\n\n\n");
             System.out.println("Digite uma opção: ");
             opcao = input.next();
@@ -106,7 +106,7 @@ public class RpgPrincipal {
                     
                     System.out.println("Ações de personagens *-- --*\n");
                     System.out.println("Falas de personagens - \n");
-                    System.out.println("Em algumas perguntas [1] & [2] pode colocar numero e letra\n");
+                    System.out.println("Em algumas perguntas [1] & [2] pode colocar número e letra\n");
                     System.out.println("Em perguntas com ( ) ultilize números");
                     break;
 
@@ -223,10 +223,12 @@ public class RpgPrincipal {
 
         } while (escolha != 1);
 
-        System.out.println(name + " está no centro da cidade, onde se tem um vasto comércio de objetos artesanais, uma praça pública em frente a igreja e a 3km de distância tem o castelo do rei Gerald IV, ");
-        System.out.println("onde tem uma imensa muralha, torres vigiadas o dia inteiro para a proteção do rei, familiares e de seu tesouro e no fundo do castelo tem ");
-        System.out.println("o calabouço. Do lado leste à 5km está localizado a cidade dos anões, chamada de Yggdrasil, à norte a floresta de Dean, lá vive criaturas mágicas, do lado noroeste de ");
-        System.out.println("Lavenham, há 20km está a tribo mística Salpphire. No Sul, são reinos mais pobres, portanto mais perigosos! ");
+        System.out.println(name + " está no centro da cidade, onde se tem um vasto comércio de objetos artesanais, uma praça pública em frente a igreja e a 3km de distância tem o castelo\n"
+                + "do rei Gerald IV, ");
+        System.out.println("onde tem uma imensa muralha, torres vigiadas o dia inteiro para a proteção do rei, familiares e de seu tesouro, e no fundo do castelo tem\n");
+        System.out.println("o calabouço. Do lado leste à 5km está localizado a cidade dos anões, chamada de Yggdrasil, à norte a floresta de Dean, lá vive criaturas mágicas, do lado noroeste\n"
+                + "de Lavenham, há 20km está a tribo mística Salpphire. No Sul, são reinos mais pobres, portanto mais perigosos! ");
+        
 
         System.out.println("\n\n- Veja! O mensageiro do rei na praça pública, ele tem um comunicado a se fazer, vamos ouvir o que ele tem a dizer?");
         TimeUnit.SECONDS.sleep(10);
@@ -239,20 +241,20 @@ public class RpgPrincipal {
 
             switch (escolha) {
                 case 1:
-                    System.out.println("\n[Mensageiro] -- Vejam só, há um(a) nobre guerreiro(a) disposto(a) a enfrentar a criatura que está aterrorizando as terras do rei "
-                            + "Qual é seu nome ?\n"
+                    System.out.println("\n[Mensageiro] -- Vejam só! há um(a) nobre guerreiro(a) disposto(a) a enfrentar a criatura que está aterrorizando as terras do rei\n"
+                            + "Qual é seu nome?\n"
                             + "Meu nome é " + name + "!\n"
-                            + "[Mensageiro] -- Vejo que você é de longe, o Rei vai adorar te conhcer, vamos para o castelo, lá você irá conhcecer o rei pessoalmente!\n");
+                            + "[Mensageiro] -- Vejo que você é de longe, o Rei vai adorar te conhecer, vamos para o castelo, lá você irá conhcecer o rei pessoalmente!\n");
                     carisma = carisma + 2;
                     TimeUnit.SECONDS.sleep(6);
-                    System.out.println("*-- " + name + " e Mensageiro foram ao castelo, após chegarem, vão de encontro com o rei --*");
+                    System.out.println("*-- " + name + " e o mensageiro foram ao castelo, após chegarem, vão de encontro com o rei --*");
                     System.out.println("[Mensageiro] -- Com licença meu Rei, trouxe esse jovem aventureiro para conhecer o senhor, creio que ele poderá cumprir a missão imposta por vossa majestade.\n");
                     TimeUnit.SECONDS.sleep(4);
-                    System.out.println("[Rei Gerald IV]-- Isso é magnifico, então meu jovem, voce aparenta ser muito forte e habilidoso, porém, ainda nçao estou totalmente convencido.\n");
+                    System.out.println("[Rei Gerald IV]-- Isso é magnifico, então meu jovem, você aparenta ser muito forte e habilidoso, porém ainda não estou totalmente convencido.\n");
                     TimeUnit.SECONDS.sleep(4);
                     System.out.println("[Rei Gerald IV]-- Irei testar sua força imediatamente\n");
                     TimeUnit.SECONDS.sleep(3);
-                    System.out.println(" **O Rei olha pra um de seus guardas e diz** , o acompanhe ate o centro de treinamento e lhe empreste uma arma adequada\n");
+                    System.out.println(" **O Rei olha para um de seus guardas e diz** , o acompanhe até o centro de treinamento e lhe empreste uma arma adequada\n");
                     TimeUnit.SECONDS.sleep(3);
                     System.out.println("[Rei Gerald IV]-- Estão prontos?\n");
                     TimeUnit.SECONDS.sleep(3);
@@ -277,7 +279,7 @@ public class RpgPrincipal {
                             break;
                     }
 
-                    System.out.println("\n[Rei Gerald IV]-- Já sei, agora voce irá duelar com um dos meus melhores guerreiros, ele é lider e comandante geral da guarda Real. \n");
+                    System.out.println("\n[Rei Gerald IV]-- Já sei, agora você irá duelar com um dos meus melhores guerreiros, ele é lider e comandante geral da guarda Real. \n");
                     TimeUnit.SECONDS.sleep(3);
 
                     switch (name) {
@@ -300,24 +302,24 @@ public class RpgPrincipal {
 
                     System.out.println("\n**-- PARABÉNS--**\n");
                     TimeUnit.SECONDS.sleep(2);
-                    System.out.println("[Rei Gerald IV]-- Certo você se provou digno de prosseguir com a missão,"
-                            + " agora irei para meus aposentos,mensageiro, acredito que passou as informações para o viajante, mas se não passou passe imediatamente"
+                    System.out.println("[Rei Gerald IV]-- Certo você se provou digno de prosseguir com a missão,\n"
+                            + " agora irei para meus aposentos,mensageiro acredito que passou as informações para o viajante, mas se não passou passe imediatamente!\n"
                             + "estou me retirando.\n");
                     TimeUnit.SECONDS.sleep(3);
 
-                    System.out.println("[Mensageiro]-- Sua missao é ir ate a floresta Dean, descobrir o paradeiro do javali e acabar com ele!\n");
+                    System.out.println("[Mensageiro]-- Sua missão é ir até a floresta de Dean e descobrir o paradeiro do javali e acabar com ele!\n");
                     TimeUnit.SECONDS.sleep(3);
 
-                    System.out.println("Você acabou de receber +2 Pontos de carisma com a cidade, com esses pontos de carismas você consegue ter mais vantagens em algumas missões"
-                            + " tente não recusar missões pois você pode acabar perdendo esses pontos, isso aumentara a dificuldade em alguns desafios\n");
+                    System.out.println("Você acabou de receber +2 Pontos de carisma com a cidade, com esses pontos de carismas você consegue ter mais vantagens em algumas missões\n"
+                            + " tente não recusar missões pois você pode acabar perdendo esses pontos, isso aumentará a dificuldade em alguns desafios\n");
                     TimeUnit.SECONDS.sleep(4);
 
-                    System.out.println("Quer ver seu nivel de carisma?");
+                    System.out.println("Quer ver seu nível de carisma?");
                     System.out.println("[1] - Sim");
-                    System.out.println("[2] - Nao");
+                    System.out.println("[2] - Não");
                     escolha = input.nextInt();
                     if (escolha == 1) {
-                        System.out.println("Seu atual nivel de Carisma com a cidade é: " + carisma);
+                        System.out.println("Seu atual nível de Carisma com a cidade é: " + carisma);
                         break;
                     } else if (escolha == 2) {
                         break;
@@ -325,9 +327,9 @@ public class RpgPrincipal {
                     }
 
                 case 2:
-                    System.out.println("[Desconhecido1]-- Veja só, aquela pessoa é nova na cidade,você soube de um boato que mataram alguem ontem nos becos?\n");
-                    System.out.println("[Desconhecido2]-- Sim, provavelmente essa é a unica pessoa nova na cidade, não temos casos de assasinato há algum tempo, vamos chamar as autoridades!"
-                            + "** Os desconhcidos chamam os guardas para levar você a cadeia!\n");
+                    System.out.println("[Desconhecido1]-- Veja só, aquela pessoa é nova na cidade,você soube de um boato que mataram alguém ontem nos becos?\n");
+                    System.out.println("[Desconhecido2]-- Sim, provavelmente essa é a única pessoa nova na cidade, não temos casos de assasinato há algum tempo, vamos chamar as autoridades!\n"
+                            + "** Os desconhcidos chamam os guardas para levar você até a cadeia!\n");
                     TimeUnit.SECONDS.sleep(5);
 
                     switch (name) {
@@ -348,25 +350,25 @@ public class RpgPrincipal {
                             break;
                     }
 
-                    System.out.println("\nVocê derretou o garda e fugiu para becos da cidade e ficou escondidor por lá ");
-                    System.out.println("Tempo se passou e você escutou a conversa de duas pessoas conversando ");
-                    System.out.println("[Desconhecido3]-- Você viu o que esta acontecendo na floresta dean?");
-                    System.out.println("[Desconhecido4]-- Sim, dizem que tem uma criatura de fogo aterrorizando toda floresta");
-                    System.out.println("[Desconhecido3]-- Parece que  o rei dara uma recompensa para quem matar essa criatura, queria se forte para acabar com essa criatura...");
-                    System.out.println("As duas pessoas se distancia ");
-                    System.out.println("Depois de ouvir aquilo, você resolveu ir investigar a floresta, com a intenção de fica com a recompensa disposta pelo rei!");
-                    System.out.println("Chegando na Floresta você deparou com pegada de javali e o local todo em cinza\n");
+                    System.out.println("\nVocê derretou o guarda e fugiu para os becos da cidade e ficou escondido por lá mesmo\n");
+                    System.out.println("Tempo se passou e você escutou a conversa de duas pessoas\n");
+                    System.out.println("[Desconhecido3]-- Você viu o que está acontecendo na floresta de dean?");
+                    System.out.println("[Desconhecido4]-- Sim, dizem que tem uma criatura de fogo aterrorizando toda floresta.\n");
+                    System.out.println("[Desconhecido3]-- Parece que  o rei dará uma recompensa para quem matar essa criatura, queria ser forte para acabar com essa criatura...\n");
+                    System.out.println("As duas pessoas se distância\n");
+                    System.out.println("Depois de ouvir aquilo, você resolveu ir investigar a floresta, com a intenção de conseguir a recompensa disposta pelo rei!");
+                    System.out.println("Chegando na Floresta você deparou com uma pegada de javali e o local todo em cinza\n");
                     TimeUnit.SECONDS.sleep(6);
 
-                    System.out.println("Você perdeu -2 Pontos de carisma, se seu carisma chegar a 0, você poderá morrer por sofrer varias pedradas ao longo do caminho,"
-                            + " Suba seu carismo para gnahar vantagens nas missões\n");
+                    System.out.println("Você perdeu -2 Pontos de carisma, se seu carisma chegar a 0, você poderá morrer por sofrer várias pedradas ao longo do caminho,\n"
+                            + " Suba seu carismo para ganhar vantagens nas missões.\n");
                     carisma = carisma - 2;
                     System.out.println("Seu atual nivel de carisma é: " + carisma);
                     break;
             }
         } while (escolha != 1 && escolha != 2);
 
-        System.out.println("\nDirija-se a floresta e encontre o Javali.\n");
+        System.out.println("\nDirija-se à floresta e encontre o Javali.\n");
 
         System.out.println("Você chega na floresta."
                 + "Veja, ali tem algumas pegadas e está dando a duas direções diferentes.\n");
@@ -391,7 +393,7 @@ public class RpgPrincipal {
                     System.out.println("Continue Procurando");
                     break;
                 case 2:
-                    System.out.println("Pegadas te levam a um Javali, porém, não é o que você procura.");
+                    System.out.println("Pegadas te levam a um Javali, porém não é o que você procura.");
                     System.out.println("Prepare-se, ele está vindo te atacar\n");
 
                     // Batalha com javali normal.
@@ -419,17 +421,17 @@ public class RpgPrincipal {
             }
         } while (pegada != 1 && pegada != 2);
 
-        System.out.println("[??????]Não adianta, você não vai achá-lo assim");
-        System.out.println("**Uma figura mesteriosa aparece na sua frente**");
-        System.out.println("[Desconhecido]: Olá, eu sou um caçador e eu sei muito qual animal você está procurando");
-        System.out.println("[Caçador]: Não é assim que você vai achá-lo, como o próprio nome já diz  ");
+        System.out.println("[??????]Não adianta, você não vai achá-lo assim.");
+        System.out.println("**Uma figura misteriosa aparece na sua frente**");
+        System.out.println("[Desconhecido]: Olá, eu sou um caçador e eu sei qual animal você está procurando");
+        System.out.println("[Caçador]: Não é assim que você vai achá-lo, como o próprio nome já diz... ");
         System.out.println("ELE É FLAMEJANTE!!");
         System.out.println("Esse jeito convencional não adianta, ou seja, você tem que procurar sinais de fogo na floresta");
         System.out.println("[Desconhecido]: Oh, olha, o que é aquilo? ");
-        System.out.println("Você olha, e não ver nada, quando vira novamente, o caçador já não está mais lá.\n");
+        System.out.println("Você olha e não vê nada, quando vira novamente, o caçador já não está mais lá.\n");
         TimeUnit.SECONDS.sleep(7);
 
-        System.out.println("Agora investigue a floresta e procure por sinais de incendio\n");
+        System.out.println("Agora investigue a floresta e procure por sinais de incêndio\n");
 
         int lugar = 0;
         do {
@@ -445,7 +447,7 @@ public class RpgPrincipal {
                 case 1:
                     System.out.println("Você adentrou a floresta");
                     System.out.println("Como pode ver ela parece normal, menos pelo cheiro de fumaça");
-                    System.out.println("E olhe, também tem árvores carbonizadas, porém, é estranho.");
+                    System.out.println("E olhe, também tem árvores carbonizadas, porém é estranho.");
                     System.out.println("além de queimadas, elas também estão com rachaduras no meio");
                     System.out.println("Algo grande bateu nisso");
                     System.out.println("Porém, ja faz um tempo que aconteceu.");
@@ -454,8 +456,8 @@ public class RpgPrincipal {
                     break;
                 case 2:
                     System.out.println("Você chegou no vilarejo.");
-                    System.out.println("Está um cheiro insurpotavel de fumaça");
-                    System.out.println("Veja só aquelas casas, completamente destruidas, não foi apenas um incêndio que causou isso");
+                    System.out.println("Está um cheiro insurpotável de fumaça");
+                    System.out.println("Veja só aquelas casas, completamente destruídas, não foi apenas um incêndio que causou isso");
                     System.out.println("Meu Deus, tem até corpos carbonizados.");
                     System.out.println("Não irei achar mais nada aqui\n");
                     TimeUnit.SECONDS.sleep(4);
@@ -472,7 +474,7 @@ public class RpgPrincipal {
                     break;
                 case 4:
                     System.out.println("Você chegou na caverna misteriosa");
-                    System.out.println("como o proprio nome ja diz, ela é bem misteriosa");
+                    System.out.println("como o próprio nome já diz, ela é bem misteriosa");
                     TimeUnit.SECONDS.sleep(3);
                     System.out.println("POCOTÓ, POCOTÓ, POCOTÓ");
                     TimeUnit.SECONDS.sleep(2);
@@ -486,7 +488,7 @@ public class RpgPrincipal {
                     System.out.println("WHOOOOSSSSSHHHHHH!!!!!");
                     TimeUnit.SECONDS.sleep(2);
                     System.out.println("nossa, quase que o acerta, isso foi perigoso");
-                    System.out.println("não há duvidas, ele está lá dentro");
+                    System.out.println("não há dúvidas, ele está lá dentro");
                     System.out.println("Ele está vindo, deve ter sentido seu cheiro");
                     TimeUnit.SECONDS.sleep(3);
                     System.out.println("PREPARE-SE!!!\n");
@@ -529,7 +531,7 @@ public class RpgPrincipal {
 
         System.out.println("*--Você entrou no Bar!--*");
         System.out.println("[Dono do Taverna] - Olá aventureiro(a)!");
-        System.out.println("[Dono do Taverna] - Fiquei sabendo que você matou o javali flamejante que estava atormentando as os campos de plantação da cidade, "
+        System.out.println("[Dono do Taverna] - Fiquei sabendo que você matou o javali flamejante que estava atormentando os campos de plantação da cidade,\n "
                 + "falo por todos da cidade que a partir de agora você será bem-vindo em Lavenham, como agradecimento venha tomar uma bebida ruim e barata com a gente!");
         System.out.println(".\n.\n.");
         TimeUnit.SECONDS.sleep(4);
@@ -543,7 +545,7 @@ public class RpgPrincipal {
         System.out.println("(" + name + "): Sou campeã(o) em tomar cachaça\n");
         TimeUnit.SECONDS.sleep(4);
 
-        System.out.println("[Dono do Taverna] - Seu pai, aquele cacacheiro, HAHAHA!");
+        System.out.println("[Dono do Taverna] - Seu pai, aquele cachaceiro, HAHAHA!");
         System.out.println("[Dono do Taverna] - Então vamos começar!");
         System.out.println("[Dono da Taverna] - Primeira pergunta, valendo um gole da minha cachaça");
         TimeUnit.SECONDS.sleep(6);
@@ -617,11 +619,11 @@ public class RpgPrincipal {
             case "legendario":
             case "LEGENDÁRIO":
             case "LEGENDARIO":
-                System.out.println("\n[Dono da Taverna] - Resposta errada!, beba um gole!");
+                System.out.println("\n[Dono da Taverna] - Resposta errada! beba um gole!");
                 System.out.println("*--" + name + " toma um gole da cachaça--*");
                 avatar = avatar + 1;
                 if (avatar == 1) {
-                    System.out.println("(" + name + "): Que poiquera é essa!");
+                    System.out.println("(" + name + "): Que porqueira é essa!");
                 }
                 break;
         }
@@ -638,7 +640,7 @@ public class RpgPrincipal {
         System.out.println("(" + name + "): Mas peraí, quem é Guernica?\n");
 
         System.out.println("[Dono do Bar] - Só responda logo!\n");
-        System.out.println("(" + name + "): Ta bom véi.");
+        System.out.println("(" + name + "): Ta bom vai.");
         String pf = input.next();
         switch (pf) {
             case "A":
@@ -653,11 +655,11 @@ public class RpgPrincipal {
             case "e":
 
                 System.out.println("\n[Dono da Taverna] - Errou mentecapto, não tem resposta certa!");
-                System.out.println("[Dono da Taverna] - Esse era só pra ver se era bom mesmo");
+                System.out.println("[Dono da Taverna] - Esse era só pra ver se você era bom mesmo");
                 break;
             default:
                 System.out.println("\n[Dono da Taverna] - Errou mentecapto, não tem resposta certa!");
-                System.out.println("[Dono da Taverna] - Esse era só pra ver se era bom mesmo");
+                System.out.println("[Dono da Taverna] - Esse era só pra ver se você era bom mesmo");
 
         }
         System.out.println("\n\n[Dono do Bar] - Pergunta de número 3:");
@@ -668,7 +670,7 @@ public class RpgPrincipal {
         switch (resposta) {
             case "Bodvar":
             case "bodvar":
-                System.out.println("\n[Dono do Bar] - Que onda é essa? você ganhou! Não vá se achando demais, quero ver a proxima perguta voce acertar ");
+                System.out.println("\n[Dono do Bar] - Que onda é essa? você ganhou! Não vá se achando demais, quero ver a próxima perguta se você vai acertar! ");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma três goles de sua cachaça--*");
                 System.out.println("[Dono do Bar] - Eita cana braba da peste!!");
                 donoDoBar = donoDoBar + 3;
@@ -676,11 +678,11 @@ public class RpgPrincipal {
             default:
                 System.out.println("\n[Dono do Bar] - Você errou!! bastardo");
                 System.out.println("*--" + name + " toma mais 3 goles da cachaça--*");
-                System.out.println("(" + name + "): Pode encher que hoje é sexta-feita");
+                System.out.println("(" + name + "): Pode encher que hoje é sexta-feita!");
                 avatar = avatar + 3;
         }
         System.out.println("[Dono do Bar] - Quarta Pergunta:");
-        System.out.println("[Dono do Bar] - Se você está participando em uma corrida de cavalos e você ultrapassa o quarto lugar");
+        System.out.println("[Dono do Bar] - Se você está participando em uma corrida de cavalos e você ultrapassa o quarto lugar,");
         System.out.println("[Dono do Bar] - Em que lugar você fica?");
         System.out.println("a) Terceiro\n"
                 + "b) Quarto\n"
@@ -709,11 +711,11 @@ public class RpgPrincipal {
                 break;
             default:
                 System.out.println("*--" + name + " toma mais 4 goles da cachaça--*");
-                System.out.println("(" + name + "):- Aaahhh, Desce mais não que essas desçeram rasgando!");
+                System.out.println("(" + name + "):- Aaahhh, Desce mais, não que essas desçeram rasgando!");
                 avatar = avatar + 4;
                 break;
         }
-        System.out.println("[Dono do Bar] - Ultima pergunta:");
+        System.out.println("[Dono do Bar] - Última pergunta:");
         System.out.println("[Dono do Bar] - Um cara chegou no meu bar e deixou um papel com diversos números em continuação:");
         System.out.println("*--1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233... 610,987...--*");
         System.out.println("[Dono do Bar] - Vamos ver se você entende essa sequencia");
@@ -730,13 +732,13 @@ public class RpgPrincipal {
             case "c":
             case "C":
 
-                System.out.println("[Dono do Bar] - Você é bom mesmo");
+                System.out.println("[Dono do Bar] - Você é bom mesmo!");
                 System.out.println("[Dono do Bar] - Olokinho meu!!");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma cinco goles de sua cachaça--*");
                 donoDoBar = donoDoBar + 5;
                 break;
             default:
-                System.out.println("[Dono do Bar] - Poxa meu nobre, isso foi facil demais! só não entende quem não quer!\n"
+                System.out.println("[Dono do Bar] - Poxa meu nobre, isso foi fácil demais! só não entende quem não quer!\n"
                         + "[Dono do bar] - Quem deixou isso aqui foi um tal de Fibonacci\n");
                 System.out.println("*--" + name + " toma mais 5 goles da cachaça--*\n");
                 System.out.println("(" + name + "):- OnDe É qui eu to? da Onde veio esaa mizera\n");
@@ -752,12 +754,7 @@ public class RpgPrincipal {
         }
 
         // desafio do paradeiro do premio
-        System.out.println(name + ": É, realmente foi muito bom ter ido a taberna!\n"
-                + "[DESCONHECIDO -]" + name + ", vou embora! já está tarde!\n"
-                + "você quer ir?\n"
-                + name + ": Não, vou ficar! até mais!\n"
-                + "O tempo passou, " + name + " ficou no bar\n"
-                + "acabará dormindo lá mesmo...");
+      
         
         System.out.println(name + ": É, realmente foi muito bom ter ido a taberna!\n"
                 + "[DESCONHECIDO -]" + name + ", vou embora! já está tarde!\n"
@@ -895,7 +892,7 @@ public class RpgPrincipal {
                             + "######=========================|| ||");
                     break;
                 case 2:
-                    System.out.println("Vai ficar aqui até quando ... ");
+                    System.out.println("Vai ficar aqui até quando? ... ");
                     System.out.println(".\n"
                             + ".\n"
                             + ".\n");
@@ -987,7 +984,7 @@ public class RpgPrincipal {
                 + "Está esfera acumula todo o poder da criatura mais poderosa que já existiu na terra... Chamada ASTAROTH. A linhagem do Rei, tem como proteção a mais antiga das bruxas\n"
                 + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
                 + "Esta mesma bruxa preveu, que um guerreiro(a) corajoso(a) e com o coração puro! iria virar historia\n"
-                + "A bruxa sabia que desdo Javali... o(a) guerreiro(a)" + name + " iria gerar prosperidade para todos do reino!###\n");
+                + "A bruxa sabia desde o Javali... o(a) guerreiro(a)" + name + " iria gerar prosperidade para todos do reino!###\n");
 
         System.out.println("\n *-- Elizabeth a bruxa foi até" + name + " que estaria saindo do calabouço --*\n");
         System.out.println("[Elizabeth - Bruxa] - Encontrei você!\n");
@@ -996,7 +993,7 @@ public class RpgPrincipal {
         System.out.println("[Elizabeth - Bruxa] - O ladrão que roubou sua esfera é Matidig, o meu aprendinz, ele roubou o livro de feitiços e vai invocar ASTAROTH!\n");
         System.out.println("(" + name + ") - Pera ai!!!  Quem é Astaroth? E por que eu tenho que que ir enfrentar ele? num vo, aaahhh, mais num vo mesmo!\n");
         System.out.println("[Elizabeth - Bruxa] - Você está destinado a deter Astaroth!\n");
-        System.out.println("(" + name + ") - Vamo lá né, fazer o que... logo hojé que sabado vei...\n");
+        System.out.println("(" + name + ") - Vamo lá né, fazer o que... logo hoje que é sabado vei...\n");
 
         System.out.println(" *-- " + name + " e Elizabeth foram até onde estaria Matidig, num local desertico, apos chegarem lá, se deparam com Matidig morto por Astaroth--*");
         System.out.println("*-- Matidig já havia invocado Astaroth com a esfera de " + name + " --*\n");
@@ -1071,7 +1068,7 @@ public class RpgPrincipal {
                 dueloFinal2.dueloYvennaFinal(1232, 1000);
                 break;
         }
-        System.out.println("Apos a luta com Astaroth, o reino fica em paz...");
+        System.out.println("Após a luta com Astaroth, o reino fica em paz...");
         System.out.println("FIM DO JOGO");
     }
 }

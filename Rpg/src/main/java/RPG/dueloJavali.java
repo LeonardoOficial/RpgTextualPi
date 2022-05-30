@@ -13,15 +13,15 @@ public class dueloJavali {
 
             switch (Anna.habilidades()) {
                 case 1:
-                    System.out.println("Anna esfaqueou o Guarda");
+                    System.out.println("Anna esfaqueou o Javali");
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Anna acertou o Guarda com uma flecha");
+                    System.out.println("Anna acertou o Javali com uma flecha");
                     hpInimigo -= 12;
                     break;
                 case 3:
-                    System.out.println("O Guarda foi atingido pelas flechas de Anna!");
+                    System.out.println("O Javali foi atingido pelas flechas de Anna!");
                     hpInimigo -= 15;
                     break;
                 default:
@@ -63,11 +63,11 @@ public class dueloJavali {
 
             switch (Floki.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda caiu com os tremores causados por Floki!");
+                    System.out.println("O Javali caiu com os tremores causados por Floki!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Floki deu uma machadada no Guarda!");
+                    System.out.println("Floki deu uma machadada no Javali!");
                     hpInimigo -= 15;
                     break;
                 case 3:
@@ -113,15 +113,15 @@ public class dueloJavali {
 
             switch (Halroc.habilidades()) {
                 case 1:
-                    System.out.println("Halroc deu um corte rápido no Guarda!");
+                    System.out.println("Halroc deu um corte rápido no Javali!");
                     hpInimigo -= 12;
                     break;
                 case 2:
-                    System.out.println("Halroc deu um corte sombrio no Guarda!");
+                    System.out.println("Halroc deu um corte sombrio no Javali!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("O Guarda é ferido pela explosão da bomba!");
+                    System.out.println("O Javali é ferido pela explosão da bomba!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -163,15 +163,15 @@ public class dueloJavali {
 
             switch (Yruan.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda foi eletrificado!");
+                    System.out.println("O Javali foi eletrificado!");
                     hpInimigo -= 15;
                     break;
                 case 2:
-                    System.out.println("O Guarda foi antigido por Yruan!");
+                    System.out.println("O Javali foi antigido por Yruan!");
                     hpInimigo -= 20;
                     break;
                 case 3:
-                    System.out.println("Yruan golpeia o Guarda!");
+                    System.out.println("Yruan golpeia o Javali!");
                     hpInimigo -= 12;
                     break;
                 default:
@@ -213,15 +213,15 @@ public class dueloJavali {
 
             switch (Yvenna.habilidades()) {
                 case 1:
-                    System.out.println("O Guarda foi acertado pela pedra!");
+                    System.out.println("O Javali foi acertado pela pedra!");
                     hpInimigo -= 20;
                     break;
                 case 2:
-                    System.out.println("Yvenna corta o Guarda com sua lança!");
+                    System.out.println("Yvenna corta o Javali com sua lança!");
                     hpInimigo -= 15;
                     break;
                 case 3:
-                    System.out.println("O Guarda é atingido pelos espinhos!");
+                    System.out.println("O Javali é atingido pelos espinhos!");
                     hpInimigo -= 12;
                     break;
                 default:

@@ -36,7 +36,7 @@ public class dueloFinal2 {
                     hpAnna -= 157;
                     break;
                 case 2:
-                    System.out.println("[ASTAROTH] Ultilizou o FULGOR NEGRO");
+                    System.out.println("[ASTAROTH] Utilizou o FULGOR NEGRO");
                     System.out.println("[ASTAROTH] Levantando seu braço e criando uma esfera negra no recinto,deixando tudo escuro como o vazio");
                     hpAnna -= 145;
                     break;
@@ -67,16 +67,16 @@ public class dueloFinal2 {
                     hpAstaroth -= 127;
                     break;
                 case 2:
-                    System.out.println("Floki ficou em modo Berkserk fez combos em cima de Astaroth ultilizando seu Machado!");
+                    System.out.println("Floki ficou em modo Berkserk fez combos em cima de Astaroth utilizando seu Machado!");
                     hpAstaroth -= 138;
                     break;
                 case 3:
-                    System.out.println("Floki drenou a vida de Astaroth e recebeu pontod de vida");
+                    System.out.println("Floki drenou a vida de Astaroth e recebeu ponto de vida");
                     hpFloki += 89;
                     hpAstaroth-=89;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
+                    System.out.println("OPÇÃO INVALIDA! VOCÊ ESTÁ SUPER IRADO, POR QUE ERRAR AGORA? ");
                     break;
             }
             if(hpAstaroth>0){
@@ -86,7 +86,7 @@ public class dueloFinal2 {
                     hpFloki -= 157;
                     break;
                 case 2:
-                  System.out.println("[ASTAROTH] Ultilizou o FULGOR NEGRO");
+                  System.out.println("[ASTAROTH] Utilizou o FULGOR NEGRO");
                     System.out.println("[ASTAROTH] Levantando seu braço e criando uma esfera negra no recinto,deixando tudo escuro como o vazio");
                     hpFloki -= 145;
                     break;
@@ -118,7 +118,7 @@ public class dueloFinal2 {
                     hpAstaroth -= 126;
                     break;
                 case 2:
-                    System.out.println("Halroc corta Astaroth com sua lamina negra diversas vezes!");
+                    System.out.println("Halroc corta Astaroth com sua lâmina negra diversas vezes!");
                     hpAstaroth -= 158;
                     break;
                 case 3:
@@ -126,7 +126,7 @@ public class dueloFinal2 {
                     hpAstaroth -= 128;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
+                    System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA? ");
                     break;
             }
             if(hpAstaroth>0){
@@ -136,7 +136,7 @@ public class dueloFinal2 {
                     hpHalroc -= 157;
                     break;
                 case 2:
-                    System.out.println("[ASTAROTH] Ultilizou o FULGOR NEGRO");
+                    System.out.println("[ASTAROTH] Utilizou o FULGOR NEGRO");
                     System.out.println("[ASTAROTH] Levantando seu braço e criando uma esfera negra no recinto,deixando tudo escuro como o vazio");
                     hpHalroc -= 145;
                     break; 
@@ -175,7 +175,7 @@ public class dueloFinal2 {
                     hpAstaroth -= 97;
                     break;
                 default:
-                    System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA ?");
+                    System.out.println("OPÇÃO INVALIDA! VOCÊ ESTA SUPER IRADO, POR QUE ERRAR AGORA? ");
                     break;
             }
            if(hpAstaroth>0){ 
@@ -185,7 +185,7 @@ public class dueloFinal2 {
                     hpYruan -= 157;
                     break;
                 case 2:
-                    System.out.println("[ASTAROTH] Ultilizou o FULGOR NEGRO");
+                    System.out.println("[ASTAROTH] Utilizou o FULGOR NEGRO");
                     System.out.println("[ASTAROTH] Levantando seu braço e criando uma esfera negra no recinto,deixando tudo escuro como o vazio");
                     hpYruan -= 145;
                     break;      
@@ -217,11 +217,11 @@ public class dueloFinal2 {
                     hpAstaroth -= 120;
                     break;
                 case 2:
-                    System.out.println("Yvenna corta o Astaroth em seu ponto vuneravel!");
+                    System.out.println("Yvenna corta o Astaroth em seu ponto vunerável!");
                     hpAstaroth -= 134;
                     break;
                 case 3:
-                    System.out.println("Cresce varios espinhos divinos no corpo de Astaroyh");
+                    System.out.println("Cresce vários espinhos divinos no corpo de Astaroth");
                     hpAstaroth -= 130;
                     break;
                 default:
@@ -236,7 +236,7 @@ public class dueloFinal2 {
                     hpYvenna -= 109;
                     break;
                 case 2:
-                    System.out.println("[ASTAROTH] Ultilizou o FULGOR NEGRO");
+                    System.out.println("[ASTAROTH] Utilizou o FULGOR NEGRO");
                     System.out.println("[ASTAROTH] Levantando seu braço e criando uma esfera negra no recinto,deixando tudo escuro como o vazio");
                     hpYvenna -= 145;
                     break;
