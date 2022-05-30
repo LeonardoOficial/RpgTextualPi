@@ -3,8 +3,8 @@ package RPG;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-
 public class RpgPrincipal {
+
     public static void main(String[] args) throws InterruptedException {
 
         Scanner input = new Scanner(System.in);
@@ -82,7 +82,8 @@ public class RpgPrincipal {
                     if (menu == 1) {
                         System.out.println("\n Iniciando");
                         break;
-                    }  if (menu == 2) {
+                    }
+                    if (menu == 2) {
                         break;
                     }
                     break;
@@ -90,13 +91,12 @@ public class RpgPrincipal {
                 case 3:
                     // HA FAZER
                     break;
-                    
+
                 case 4:
-                    
+
                     historia.historia();
-                    
-                    
-                break;
+
+                    break;
             }
 
         } while (menu != 1);
@@ -171,8 +171,8 @@ public class RpgPrincipal {
                 case "Yruan":
                 case "yruan":
                 case "YRUAN":
-                    
-                   Yruan.apresentacao();
+
+                    Yruan.apresentacao();
                     System.out.println("Gostaria de jogar com esse personagem? ");
                     System.out.println("[1] - SIM");
                     System.out.println("[2] - NAO");
@@ -204,8 +204,7 @@ public class RpgPrincipal {
             }
 
         } while (escolha != 1);
-        
-  
+
         System.out.println(name + " está no centro da cidade, onde se tem um vasto comércio de objetos artesanais, uma praça pública em frente a igreja e a 3km de distância tem o castelo do rei Gerald IV, ");
         System.out.println("onde tem uma imensa muralha, torres vigiadas o dia inteiro para a proteção do rei, familiares e de seu tesouro e no fundo do castelo tem ");
         System.out.println("o calabouço. Do lado leste à 5km está localizado a cidade dos anões, chamada de Yggdrasil, à norte a floresta de Dean, lá vive criaturas mágicas, do lado noroeste de ");
@@ -214,150 +213,142 @@ public class RpgPrincipal {
         System.out.println("\n\n- Veja! O mensageiro do rei na praça pública, ele tem um comunicado a se fazer, vamos ouvir o que ele tem a dizer?");
         TimeUnit.SECONDS.sleep(10);
         System.out.println("\nEle disse que o rei está precisando de guerreiros dispostos a encarar desafios propostos por ele. Você aceita participar?");
-        
-        do{
-        System.out.println("[1] - Sim");
-        System.out.println("[2] - Nao");
-        escolha = input.nextInt();
 
-        switch (escolha) {
-            case 1:
-                System.out.println("\n[Mensageiro] -- Vejam só, há um(a) nobre guerreiro(a) disposto(a) a enfrentar a criatura que está aterrorizando as terras do rei "
-                        + "Qual é seu nome ?\n"
-                        + "Meu nome é " + name + "!\n"
-                        + "[Mensageiro] -- Vejo que você é de longe, o Rei vai adorar te conhcer, vamos para o castelo, lá você irá conhcecer o rei pessoalmente!\n");
-                carisma = carisma + 2;
-                TimeUnit.SECONDS.sleep(6);
-                System.out.println("*-- " + name + " e Mensageiro foram ao castelo, após chegarem, vão de encontro com o rei --*");
-                System.out.println("[Mensageiro] -- Com licença meu Rei, trouxe esse jovem aventureiro para conhecer o senhor, creio que ele poderá cumprir a missão imposta por vossa majestade.\n");
-                TimeUnit.SECONDS.sleep(4);
-                System.out.println("[Rei Gerald IV]-- Isso é magnifico, então meu jovem, voce aparenta ser muito forte e habilidoso, porém, ainda nçao estou totalmente convencido.\n");
-                TimeUnit.SECONDS.sleep(4);
-                System.out.println("[Rei Gerald IV]-- Irei testar sua força imediatamente\n");
-                TimeUnit.SECONDS.sleep(3);
-                System.out.println(" **O Rei olha pra um de seus guardas e diz** , o acompanhe ate o centro de treinamento e lhe empreste uma arma adequada\n");
-                TimeUnit.SECONDS.sleep(3);
-                System.out.println("[Rei Gerald IV]-- Estão prontos?\n");
-                TimeUnit.SECONDS.sleep(3);
-                System.out.println("[Rei Gerald IV]-- LUTEM!!!\n");
-                TimeUnit.SECONDS.sleep(2);
-                
-                switch (name) {
-                case "Anna":
-                    dueloGuarda.dueloAnna(175, 43);
-                    break;
-                case "Floki":
-                    dueloGuarda.dueloFloki(250, 43);
-                    break;
-                case "Halroc":
-                    dueloGuarda.dueloHalroc(150, 43);
-                    break;
-                case "Yruan":
-                    dueloGuarda.dueloYruan(140, 43);
-                    break;
-                case "Yvenna":
-                    dueloGuarda.dueloYvenna(200, 43);
+        do {
+            System.out.println("[1] - Sim");
+            System.out.println("[2] - Nao");
+            escolha = input.nextInt();
+
+            switch (escolha) {
+                case 1:
+                    System.out.println("\n[Mensageiro] -- Vejam só, há um(a) nobre guerreiro(a) disposto(a) a enfrentar a criatura que está aterrorizando as terras do rei "
+                            + "Qual é seu nome ?\n"
+                            + "Meu nome é " + name + "!\n"
+                            + "[Mensageiro] -- Vejo que você é de longe, o Rei vai adorar te conhcer, vamos para o castelo, lá você irá conhcecer o rei pessoalmente!\n");
+                    carisma = carisma + 2;
+                    TimeUnit.SECONDS.sleep(6);
+                    System.out.println("*-- " + name + " e Mensageiro foram ao castelo, após chegarem, vão de encontro com o rei --*");
+                    System.out.println("[Mensageiro] -- Com licença meu Rei, trouxe esse jovem aventureiro para conhecer o senhor, creio que ele poderá cumprir a missão imposta por vossa majestade.\n");
+                    TimeUnit.SECONDS.sleep(4);
+                    System.out.println("[Rei Gerald IV]-- Isso é magnifico, então meu jovem, voce aparenta ser muito forte e habilidoso, porém, ainda nçao estou totalmente convencido.\n");
+                    TimeUnit.SECONDS.sleep(4);
+                    System.out.println("[Rei Gerald IV]-- Irei testar sua força imediatamente\n");
+                    TimeUnit.SECONDS.sleep(3);
+                    System.out.println(" **O Rei olha pra um de seus guardas e diz** , o acompanhe ate o centro de treinamento e lhe empreste uma arma adequada\n");
+                    TimeUnit.SECONDS.sleep(3);
+                    System.out.println("[Rei Gerald IV]-- Estão prontos?\n");
+                    TimeUnit.SECONDS.sleep(3);
+                    System.out.println("[Rei Gerald IV]-- LUTEM!!!\n");
+                    TimeUnit.SECONDS.sleep(2);
+
+                    switch (name) {
+                        case "Anna":
+                            dueloGuarda.dueloAnna(175, 43);
+                            break;
+                        case "Floki":
+                            dueloGuarda.dueloFloki(250, 43);
+                            break;
+                        case "Halroc":
+                            dueloGuarda.dueloHalroc(150, 43);
+                            break;
+                        case "Yruan":
+                            dueloGuarda.dueloYruan(140, 43);
+                            break;
+                        case "Yvenna":
+                            dueloGuarda.dueloYvenna(200, 43);
+                            break;
+                    }
+
+                    System.out.println("\n[Rei Gerald IV]-- Já sei, agora voce irá duelar com um dos meus melhores guerreiros, ele é lider e comandante geral da guarda Real. \n");
+                    TimeUnit.SECONDS.sleep(3);
+
+                    switch (name) {
+                        case "Anna":
+                            dueloGuarda.dueloAnna(175, 75);
+                            break;
+                        case "Floki":
+                            dueloGuarda.dueloFloki(250, 75);
+                            break;
+                        case "Halroc":
+                            dueloGuarda.dueloHalroc(150, 75);
+                            break;
+                        case "Yruan":
+                            dueloGuarda.dueloYruan(140, 75);
+                            break;
+                        case "Yvenna":
+                            dueloGuarda.dueloYvenna(200, 75);
+                            break;
+                    }
+
+                    System.out.println("\n**-- PARABÉNS--**\n");
+                    TimeUnit.SECONDS.sleep(2);
+                    System.out.println("[Rei Gerald IV]-- Certo você se provou digno de prosseguir com a missão,"
+                            + " agora irei para meus aposentos,mensageiro, acredito que passou as informações para o viajante, mas se não passou passe imediatamente"
+                            + "estou me retirando.\n");
+                    TimeUnit.SECONDS.sleep(3);
+
+                    System.out.println("[Mensageiro]-- Sua missao é ir ate a floresta Dean, descobrir o paradeiro do javali e acabar com ele!\n");
+                    TimeUnit.SECONDS.sleep(3);
+
+                    System.out.println("Você acabou de receber +2 Pontos de carisma com a cidade, com esses pontos de carismas você consegue ter mais vantagens em algumas missões"
+                            + " tente não recusar missões pois você pode acabar perdendo esses pontos, isso aumentara a dificuldade em alguns desafios\n");
+                    TimeUnit.SECONDS.sleep(4);
+
+                    System.out.println("Quer ver seu nivel de carisma?");
+                    System.out.println("[1] - Sim");
+                    System.out.println("[2] - Nao");
+                    escolha = input.nextInt();
+                    if (escolha == 1) {
+                        System.out.println("Seu atual nivel de Carisma com a cidade é: " + carisma);
+                        break;
+                    } else if (escolha == 2) {
+                        break;
+
+                    }
+
+                case 2:
+                    System.out.println("[Desconhecido1]-- Veja só, aquela pessoa é nova na cidade,você soube de um boato que mataram alguem ontem nos becos?\n");
+                    System.out.println("[Desconhecido2]-- Sim, provavelmente essa é a unica pessoa nova na cidade, não temos casos de assasinato há algum tempo, vamos chamar as autoridades!"
+                            + "** Os desconhcidos chamam os guardas para levar você a cadeia!\n");
+                    TimeUnit.SECONDS.sleep(5);
+
+                    switch (name) {
+                        case "Anna":
+                            dueloGuarda.dueloAnna(175, 90);
+                            break;
+                        case "Floki":
+                            dueloGuarda.dueloFloki(250, 90);
+                            break;
+                        case "Halroc":
+                            dueloGuarda.dueloHalroc(150, 90);
+                            break;
+                        case "Yruan":
+                            dueloGuarda.dueloYruan(140, 90);
+                            break;
+                        case "Yvenna":
+                            dueloGuarda.dueloYvenna(200, 90);
+                            break;
+                    }
+
+                    System.out.println("\nVocê derretou o garda e fugiu para becos da cidade e ficou escondidor por lá ");
+                    System.out.println("Tempo se passou e você escutou a conversa de duas pessoas conversando ");
+                    System.out.println("[Desconhecido3]-- Você viu o que esta acontecendo na floresta dean?");
+                    System.out.println("[Desconhecido4]-- Sim, dizem que tem uma criatura de fogo aterrorizando toda floresta");
+                    System.out.println("[Desconhecido3]-- Parece que  o rei dara uma recompensa para quem matar essa criatura, queria se forte para acabar com essa criatura...");
+                    System.out.println("As duas pessoas se distancia ");
+                    System.out.println("Depois de ouvir aquilo, você resolveu ir investigar a floresta, com a intenção de fica com a recompensa disposta pelo rei!");
+                    System.out.println("Chegando na Floresta você deparou com pegada de javali e o local todo em cinza\n");
+                    TimeUnit.SECONDS.sleep(6);
+
+                    System.out.println("Você perdeu -2 Pontos de carisma, se seu carisma chegar a 0, você poderá morrer por sofrer varias pedradas ao longo do caminho,"
+                            + " Suba seu carismo para gnahar vantagens nas missões\n");
+                    carisma = carisma - 2;
+                    System.out.println("Seu atual nivel de carisma é: " + carisma);
                     break;
             }
-                
-                System.out.println("\n[Rei Gerald IV]-- Já sei, agora voce irá duelar com um dos meus melhores guerreiros, ele é lider e comandante geral da guarda Real. \n");
-                TimeUnit.SECONDS.sleep(3);
-                
-                switch (name) {
-                case "Anna":
-                    dueloGuarda.dueloAnna(175, 75);
-                    break;
-                case "Floki":
-                    dueloGuarda.dueloFloki(250, 75);
-                    break;
-                case "Halroc":
-                    dueloGuarda.dueloHalroc(150, 75);
-                    break;
-                case "Yruan":
-                    dueloGuarda.dueloYruan(140, 75);
-                    break;
-                case "Yvenna":
-                    dueloGuarda.dueloYvenna(200, 75);
-                    break;
-            }
-                
-                
+        } while (escolha != 1 && escolha != 2);
 
-                System.out.println("\n**-- PARABÉNS--**\n");
-                TimeUnit.SECONDS.sleep(2);
-                System.out.println("[Rei Gerald IV]-- Certo você se provou digno de prosseguir com a missão,"
-                + " agora irei para meus aposentos,mensageiro, acredito que passou as informações para o viajante, mas se não passou passe imediatamente"
-                + "estou me retirando.\n");
-                TimeUnit.SECONDS.sleep(3);
-                
-                System.out.println("[Mensageiro]-- Sua missao é ir ate a floresta Dean, descobrir o paradeiro do javali e acabar com ele!\n");
-                TimeUnit.SECONDS.sleep(3);
-                
-                
-                System.out.println("Você acabou de receber +2 Pontos de carisma com a cidade, com esses pontos de carismas você consegue ter mais vantagens em algumas missões"
-                        + " tente não recusar missões pois você pode acabar perdendo esses pontos, isso aumentara a dificuldade em alguns desafios\n");
-                TimeUnit.SECONDS.sleep(4);
-                
-                
-                System.out.println("Quer ver seu nivel de carisma?");
-                System.out.println("[1] - Sim");
-                System.out.println("[2] - Nao");
-                escolha = input.nextInt();
-                if (escolha == 1) {
-                    System.out.println("Seu atual nivel de Carisma com a cidade é: " + carisma);
-                    break;
-                } else if (escolha == 2) {
-                    break;
-
-                }
-                
-                
-            case 2:
-                System.out.println("[Desconhecido1]-- Veja só, aquela pessoa é nova na cidade,você soube de um boato que mataram alguem ontem nos becos?\n");
-                System.out.println("[Desconhecido2]-- Sim, provavelmente essa é a unica pessoa nova na cidade, não temos casos de assasinato há algum tempo, vamos chamar as autoridades!"
-                        + "** Os desconhcidos chamam os guardas para levar você a cadeia!\n");
-                TimeUnit.SECONDS.sleep(5);
-                
-                 switch (name) {
-                case "Anna":
-                    dueloGuarda.dueloAnna(175, 90);
-                    break;
-                case "Floki":
-                    dueloGuarda.dueloFloki(250, 90);
-                    break;
-                case "Halroc":
-                    dueloGuarda.dueloHalroc(150, 90);
-                    break;
-                case "Yruan":
-                    dueloGuarda.dueloYruan(140, 90);
-                    break;
-                case "Yvenna":
-                    dueloGuarda.dueloYvenna(200, 90);
-                    break;
-            }
-                 
-                 System.out.println("\nVocê derretou o garda e fugiu para becos da cidade e ficou escondidor por lá ");
-                 System.out.println("Tempo se passou e você escutou a conversa de duas pessoas conversando ");
-                 System.out.println("[Desconhecido3]-- Você viu o que esta acontecendo na floresta dean?");
-                 System.out.println("[Desconhecido4]-- Sim, dizem que tem uma criatura de fogo aterrorizando toda floresta");
-                 System.out.println("[Desconhecido3]-- Parece que  o rei dara uma recompensa para quem matar essa criatura, queria se forte para acabar com essa criatura...");
-                 System.out.println("As duas pessoas se distancia ");
-                 System.out.println("Depois de ouvir aquilo, você resolveu ir investigar a floresta, com a intenção de fica com a recompensa disposta pelo rei!");
-                 System.out.println("Chegando na Floresta você deparou com pegada de javali e o local todo em cinza\n");
-                 TimeUnit.SECONDS.sleep(6);
-                 
-                
-                System.out.println("Você perdeu -2 Pontos de carisma, se seu carisma chegar a 0, você poderá morrer por sofrer varias pedradas ao longo do caminho,"
-                        + " Suba seu carismo para gnahar vantagens nas missões\n");
-                carisma = carisma - 2;
-                System.out.println("Seu atual nivel de carisma é: " + carisma);
-                break;
-        }
-        }while(escolha != 1 && escolha !=2);
-        
-     
         System.out.println("\nDirija-se a floresta e encontre o Javali.\n");
-        
 
         System.out.println("Você chega na floresta."
                 + "Veja, ali tem algumas pegadas e está dando a duas direções diferentes.\n");
@@ -369,9 +360,8 @@ public class RpgPrincipal {
 
             System.out.println("[1]Pegadas que levam a trilha da DIREITA ");
             System.out.println("[2]Pegadas que levam a trilha da ESQUERDA ");
-            
+
             TimeUnit.SECONDS.sleep(3);
-            
 
             pegada = input.nextInt();
 
@@ -387,25 +377,24 @@ public class RpgPrincipal {
                     System.out.println("Prepare-se, ele está vindo te atacar\n");
 
                     // Batalha com javali normal.
-                     switch (name) {
-                case "Anna":
-                    dueloJavali.dueloAnna(175, 50);
-                    break;
-                case "Floki":
-                    dueloJavali.dueloFloki(250, 50);
-                    break;
-                case "Halroc":
-                    dueloJavali.dueloHalroc(150, 50);
-                    break;
-                case "Yruan":
-                    dueloJavali.dueloYruan(140, 50);
-                    break;
-                case "Yvenna":
-                    dueloJavali.dueloYvenna(200, 50);
-                    break;
-            }
-                    
-                    
+                    switch (name) {
+                        case "Anna":
+                            dueloJavali.dueloAnna(175, 50);
+                            break;
+                        case "Floki":
+                            dueloJavali.dueloFloki(250, 50);
+                            break;
+                        case "Halroc":
+                            dueloJavali.dueloHalroc(150, 50);
+                            break;
+                        case "Yruan":
+                            dueloJavali.dueloYruan(140, 50);
+                            break;
+                        case "Yvenna":
+                            dueloJavali.dueloYvenna(200, 50);
+                            break;
+                    }
+
                     break;
                 default:
                     System.out.println("Escolha uma das opções!!");
@@ -487,37 +476,34 @@ public class RpgPrincipal {
 
                     //Batalha contra o javali flamejante
                     switch (name) {
-                case "Anna":
-                    dueloJavaliF.dueloAnna(175, 120);
-                    break;
-                case "Floki":
-                    dueloJavaliF.dueloFloki(250, 120);
-                    break;
-                case "Halroc":
-                    dueloJavaliF.dueloHalroc(150, 120);
-                    break;
-                case "Yruan":
-                    dueloJavaliF.dueloYruan(140, 120);
-                    break;
-                case "Yvenna":
-                    dueloJavaliF.dueloYvenna(200, 120);
-                    break;
-            }
-                    
-                    
-                    
+                        case "Anna":
+                            dueloJavaliF.dueloAnna(175, 120);
+                            break;
+                        case "Floki":
+                            dueloJavaliF.dueloFloki(250, 120);
+                            break;
+                        case "Halroc":
+                            dueloJavaliF.dueloHalroc(150, 120);
+                            break;
+                        case "Yruan":
+                            dueloJavaliF.dueloYruan(140, 120);
+                            break;
+                        case "Yvenna":
+                            dueloJavaliF.dueloYvenna(200, 120);
+                            break;
+                    }
+
                     break;
                 default:
                     System.out.println("Escolha uma Opção");
             }
         } while (lugar != 4);
-        
-        
+
         // historia do bar
-System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você ter vencido a luta contra aquela fera!\n"
-        + name + ": Acho melhor não, estou aqui por motivos maiores, não posso perder o foco!\n"
+        System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você ter vencido a luta contra aquela fera!\n"
+                + name + ": Acho melhor não, estou aqui por motivos maiores, não posso perder o foco!\n"
                 + "[Aliado do Rei - ] Vamos! Vai ser bom para conhecer a cidade e os moradores\n"
-                + name +": Tudo bem! pensando desta forma, vai ser bom para me familiarizar\n");
+                + name + ": Tudo bem! pensando desta forma, vai ser bom para me familiarizar\n");
         TimeUnit.SECONDS.sleep(4);
 
         int avatar = 0;
@@ -529,16 +515,16 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 + "falo por todos da cidade que a partir de agora você será bem-vindo em Lavenham, como agradecimento venha tomar uma bebida ruim e barata com a gente!");
         System.out.println(".\n.\n.");
         TimeUnit.SECONDS.sleep(4);
-        
+
         System.out.println("*--Algum tempo se passou dentro da taverna--*\n");
-        
+
         System.out.println("[Dono do Taverna] - Te proponho um desafio para ver se você é melhor que eu na cachaça, o desafio será da seguinte forma:");
         System.out.println("[Dono do Taverna] - Eu irei fazer uma pergunta, se você responder de forma correta, eu tomo um gole de rum, se você errar, você que irá beber\n");
         TimeUnit.SECONDS.sleep(4);
         System.out.println("(" + name + "): Sim, eu aceito!, mas fique sabendo que você vai tomar na jabiroca");
         System.out.println("(" + name + "): Sou campeã(o) em tomar cachaça\n");
         TimeUnit.SECONDS.sleep(4);
-        
+
         System.out.println("[Dono do Taverna] - Seu pai, aquele cacacheiro, HAHAHA!");
         System.out.println("[Dono do Taverna] - Então vamos começar!");
         System.out.println("[Dono da Taverna] - Primeira pergunta, valendo um gole da minha cachaça");
@@ -632,7 +618,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 + "e) Recife Delá");
         TimeUnit.SECONDS.sleep(3);
         System.out.println("(" + name + "): Mas peraí, quem é Guernica?\n");
-        
+
         System.out.println("[Dono do Bar] - Só responda logo!\n");
         System.out.println("(" + name + "): Ta bom véi.");
         String pf = input.next();
@@ -647,7 +633,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
             case "d":
             case "E":
             case "e":
-                
+
                 System.out.println("\n[Dono da Taverna] - Errou mentecapto, não tem resposta certa!");
                 System.out.println("[Dono da Taverna] - Esse era só pra ver se era bom mesmo");
                 break;
@@ -704,10 +690,10 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                 donoDoBar = donoDoBar + 4;
                 break;
             default:
-                 System.out.println("*--" + name + " toma mais 4 goles da cachaça--*");
+                System.out.println("*--" + name + " toma mais 4 goles da cachaça--*");
                 System.out.println("(" + name + "):- Aaahhh, Desce mais não que essas desçeram rasgando!");
                 avatar = avatar + 4;
-               break;
+                break;
         }
         System.out.println("[Dono do Bar] - Ultima pergunta:");
         System.out.println("[Dono do Bar] - Um cara chegou no meu bar e deixou um papel com diversos números em continuação:");
@@ -725,7 +711,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
             case "46,368":
             case "c":
             case "C":
-                
+
                 System.out.println("[Dono do Bar] - Você é bom mesmo");
                 System.out.println("[Dono do Bar] - Olokinho meu!!");
                 System.out.println("[Dono do Bar] *-- Dono Do Bar toma cinco goles de sua cachaça--*");
@@ -748,19 +734,20 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
         }
 
         // desafio do paradeiro do premio
-        System.out.println(name +": É, realmente foi muito bom ter ido a taberna!\n"
-                + "[DESCONHECIDO -]"+name+ ", vou embora! já está tarde!\n"
-                        + "você quer ir?\n"
-                        + name + ": Não, vou ficar! até mais!\n"
-                                + "O tempo passou, "+name+" ficou no bar\n"
-                                        + "acabará dormindo lá mesmo...");
-        int npc, ladrao;
-        
-        
-        
+        System.out.println(name + ": É, realmente foi muito bom ter ido a taberna!\n"
+                + "[DESCONHECIDO -]" + name + ", vou embora! já está tarde!\n"
+                + "você quer ir?\n"
+                + name + ": Não, vou ficar! até mais!\n");
+        System.out.println("[Dono do bar]: AGORA QUE A VERDADEIRA FESTA COMEÇA HAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!!!!!");
+        System.out.println("*--Dono do bar começa a distribuir hidromel dos anões para todos da taberna--*");
+        System.out.println("*--" + name + " começa a beber todas sem parar, e começa a dançar em cima da mesa--*");
+        System.out.println("todos começam a cantar, rir e dançar");
+        System.out.println("*--" + name + " não aguenta mais beber e apaga completamente.--*");
 
-        System.out.println("Você desmaiou, acabou acordando no bar.\n");
-        
+        int npc, ladrao;
+
+        System.out.println("Dia Seguinte...\n");
+        System.out.println("Você acorda no bar sem entender nada.\n");
 
         System.out.println("Ahh, que dor no corpo! o que aquele cara colocou na minha bebida, que me fez ficar assim?\n");
 
@@ -807,7 +794,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
         ladrao = input.nextInt();
 
         OUTER:
-        while (ladrao >=3) {
+        while (ladrao >= 3) {
             switch (ladrao) {
                 case 1:
                     System.out.println("Você acusou a pessoa errada e agora sofrerá as consequências");
@@ -843,7 +830,7 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                             System.out.println("Além de perder a luta, você será preso no calabouço por acabar com a paz do reino de Nochma ");
                             TimeUnit.SECONDS.sleep(3);
                             break;
-                    }   
+                    }
                 default:
                     System.out.println("OPERAÇÃO INVÁLIDA\n"
                             + "digite uma opção válida\n"
@@ -853,174 +840,175 @@ System.out.println("\n[Aliado do Rei - ] Vamos a taberna! comemorar por você te
                     break;
             }
         }
-            int escolha1, escolha2;
-            String charada;
-            System.out.println("Você foi preso no calabouço :( ");
-            System.out.println("Por sorte você conseguiu roubar dos guardas o mapa do calabouço sem que eles "
-                    + "percebessem!!!!");
-            TimeUnit.SECONDS.sleep(5);
-            do {
-                System.out.println("Quer dar uma olhadinha no mapa?");
-                System.out.println("[1] SIM");
-                System.out.println("[2] NÃO");
-                escolha1 = input.nextInt();
-                
-                switch (escolha1) {
-                    case 1:
-                        System.out.println("#==============================|| ||\n"
-                                + "#         E N T R A D A        || ||\n"
-                                + "||E||#=========================|| ||\n"
-                                + "||S||#                         || ||\n"
-                                + "||C||#=========================|| ||\n"
-                                + "||A||#     T U N Ú E L              \n"
-                                + "||D||#=========================|| ||\n"
-                                + "||A||#      P O R T A L             \n"
-                                + "||R||#     S E C R E T O            \n"
-                                + "||I||#=========================|| ||\n"
-                                + "||A||#=========================|| ||\n"
-                                + "######=========================|| ||");
-                        break;
-                    case 2:
-                        System.out.println("Vai ficar aqui até quando ... ");
-                        System.out.println(".\n"
-                                + ".\n"
-                                + ".\n");
-                        break;
-                    default:
-                        System.out.println("Opção inválida");
-                        break;
-                }
-                
-            } while (escolha1 == 2);
-            do {
-                System.out.println("Olhando para o mapa, aparentemente você precisa chegar"
-                        + "até o portal secreto, qual caminho irá seguir????");
-                System.out.println("[1] ESCADARIA");
-                System.out.println("[2] TÚNEL");
-                escolha2 = input.nextInt();
-                
-                switch (escolha2) {
-                    case 1:
-                        System.out.println("Boa sorte com essa enorme escada");
-                        System.out.println(".");
-                        System.out.println(".");
-                        System.out.println(".");
-                        System.out.println("você chegou ao fim, veja o que tem a frente ...");
-                        System.out.println("Uma enorme parede, parece que não vai ser por aqui que "
-                                + "você vai sair.");
-                        break;
-                    case 2:
-                        System.out.println("Será que há luz no fim do túnel?????");
-                        System.out.println("Ande mais um pouquinho ... ");
-                        System.out.println(".");
-                        System.out.println(".");
-                        System.out.println(".");
-                        System.out.println("AAAAA, parece que você encontrou uma porta ... pena que"
-                                + " está trancada, te desejo sorte para abrir hahahaha");
-                        break;
-                    default:
-                        System.out.println("Opção inválida");
-                        break;
-                }
-                
-            } while (escolha2 != 2);
-            System.out.println("Veja, na porta há um pergaminho, talvez tenha alguma dica de como "
-                    + "abrir a porta\n");
-            System.out.println("@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n"
-                    + "|Vc está há um passo de conseguir atravessar |\n"
-                    + "|o portal secreto, para isto é necessário que|\n"
-                    + "|vc diga a senha em voz alta. Há uma dica no |\n"
-                    + "|final do pergaminho.                        |\n"
-                    + "|                                            |\n"
-                    + "|                                            |\n"
-                    + "|                                            |\n"
-                    + "|                Boa sorte!!!                |\n"
-                    + "|                                            |\n"
-                    + "|                                            |\n"
-                    + "|                                            |\n"
-                    + "|                                            |\n"
-                    + "|                                            |\n"
-                    + "|Dica:Eu nunca fui, mas sempre serei. Ninguém|\n"
-                    + "|  nunca me viu, e nunca verão. Ainda assim, |\n"
-                    + "|  sou a esperança de todos. Quem sou eu?    |\n"
-                    + "@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n");
-            TimeUnit.SECONDS.sleep(5);
-            System.out.println("E agora qual a senha?");
-            charada = input.next();
-            while (!charada.equalsIgnoreCase("futuro")) {
-                
-                System.out.println("Não é isso. Tente denovo");
-                System.out.println("Diga-me novamente o que a senha:");
-                charada = input.next();
-            }   System.out.println("Finalmente você acertou. Parabéns");
-            System.out.println("o portal está se abrindo ...");
-            System.out.println(".\n"
-                    + ".\n"
-                    + ".\n");
-            System.out.println("O portal se abriu, logo a frente há uma saída. Vá em "
-                    + "frente e tente encontrar a Elizabeth e recupere o seu artefato."
-                    + ".\n"
-                    + ".\n"
-                    + ".\n");
-            System.out.println("E para a surpresa de todos, está esfera presente que" + name + " recebeu do rei como recompesa, tem grande propósito!\n"
-                    + "Está esfera acumula-se todo o poder da criatura mais poderosa que já existiu na terra... ASTAROTH. A família de Gerald, tem linhagem com os mais antigos bruxos\n"
-                    + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
-                    + "Lógico que também preveram que iria chegar um guerreiro corajoso e com o coração puro!\n"
-                    + "Que a único intuito deste guerreiro é prosperidade em todos os reinos, mas nada.\n"
-                    + "[Elizabeth - Bruxa] - " +name+ " Você chegou até aqui e isso está mais do que provado, que seu destino é derrotar Astaroth e você se tornar o guerreiro\n"
-                            + "mais poderoso de todos os reinos.\n"
-                            + "Lembre-se que a sua arma, não foi ganhada em vão...\n"
-                            + ".\n"
-                            + ".\n"
-                            + ".\n"
-                            + "Chegou a hora de lutar com Astaroth!\n"
-                            + ".\n"
+        int escolha1, escolha2;
+        String charada;
+        System.out.println("Você foi preso no calabouço :( ");
+        System.out.println("Por sorte você conseguiu roubar dos guardas o mapa do calabouço sem que eles "
+                + "percebessem!!!!");
+        TimeUnit.SECONDS.sleep(5);
+        do {
+            System.out.println("Quer dar uma olhadinha no mapa?");
+            System.out.println("[1] SIM");
+            System.out.println("[2] NÃO");
+            escolha1 = input.nextInt();
+
+            switch (escolha1) {
+                case 1:
+                    System.out.println("#==============================|| ||\n"
+                            + "#         E N T R A D A        || ||\n"
+                            + "||E||#=========================|| ||\n"
+                            + "||S||#                         || ||\n"
+                            + "||C||#=========================|| ||\n"
+                            + "||A||#     T U N Ú E L              \n"
+                            + "||D||#=========================|| ||\n"
+                            + "||A||#      P O R T A L             \n"
+                            + "||R||#     S E C R E T O            \n"
+                            + "||I||#=========================|| ||\n"
+                            + "||A||#=========================|| ||\n"
+                            + "######=========================|| ||");
+                    break;
+                case 2:
+                    System.out.println("Vai ficar aqui até quando ... ");
+                    System.out.println(".\n"
                             + ".\n"
                             + ".\n");
-            System.out.println("Luta com astaroth");
-            switch(name){
-                case "Anna":
-                    dueloFinal.dueloAnna(60, 1000);
                     break;
-                case "Floki":
-                    dueloFinal.dueloFloki(60, 1000);
-                    break;
-                case "Harolc":
-                    dueloFinal.dueloHalroc(60, 1000);
-                    break;
-                case "Yruan":
-                    dueloFinal.dueloYruan(60, 1000);
-                    break;
-                case "Yvenna":
-                    dueloFinal.dueloYvenna(60, 1000);
-                    break;
-            }   System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!\n"
-                    + ".\n"
-                    + ".\n"
-                    + ".\n");
-            System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
-            System.out.println("[Elizabeth] " + name + " está fraca, é necessário fazer uma magia para que fique mais forte e consiga derrotar Astaroth!\n"
-                    + "através das forças das bruxas da família, vou deixa-lo mais forte para conseguir derrotar Astaroth."
-                    + ".\n"
-                    + ".\n"
-                    + ".\n" );
-            switch (name){
-                case "Anna":
-                    dueloFinal2.dueloAnnaFinal(1250, 1000);
-                    break;
-                case "Floki":
-                    dueloFinal2.dueloFlokiFinal(1256, 1000);
-                    break;
-                case "Harolc":
-                    dueloFinal2.dueloHalrocFinal(1300, 1000);
-                    break;
-                case "Yruan":
-                    dueloFinal2.dueloYruanFinal(1367, 1000);
-                    break;
-                case "Yvenna":
-                    dueloFinal2.dueloYvennaFinal(1232, 1000);
+                default:
+                    System.out.println("Opção inválida");
                     break;
             }
+
+        } while (escolha1 == 2);
+        do {
+            System.out.println("Olhando para o mapa, aparentemente você precisa chegar"
+                    + "até o portal secreto, qual caminho irá seguir????");
+            System.out.println("[1] ESCADARIA");
+            System.out.println("[2] TÚNEL");
+            escolha2 = input.nextInt();
+
+            switch (escolha2) {
+                case 1:
+                    System.out.println("Boa sorte com essa enorme escada");
+                    System.out.println(".");
+                    System.out.println(".");
+                    System.out.println(".");
+                    System.out.println("você chegou ao fim, veja o que tem a frente ...");
+                    System.out.println("Uma enorme parede, parece que não vai ser por aqui que "
+                            + "você vai sair.");
+                    break;
+                case 2:
+                    System.out.println("Será que há luz no fim do túnel?????");
+                    System.out.println("Ande mais um pouquinho ... ");
+                    System.out.println(".");
+                    System.out.println(".");
+                    System.out.println(".");
+                    System.out.println("AAAAA, parece que você encontrou uma porta ... pena que"
+                            + " está trancada, te desejo sorte para abrir hahahaha");
+                    break;
+                default:
+                    System.out.println("Opção inválida");
+                    break;
+            }
+
+        } while (escolha2 != 2);
+        System.out.println("Veja, na porta há um pergaminho, talvez tenha alguma dica de como "
+                + "abrir a porta\n");
+        System.out.println("@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n"
+                + "|Vc está há um passo de conseguir atravessar |\n"
+                + "|o portal secreto, para isto é necessário que|\n"
+                + "|vc diga a senha em voz alta. Há uma dica no |\n"
+                + "|final do pergaminho.                        |\n"
+                + "|                                            |\n"
+                + "|                                            |\n"
+                + "|                                            |\n"
+                + "|                Boa sorte!!!                |\n"
+                + "|                                            |\n"
+                + "|                                            |\n"
+                + "|                                            |\n"
+                + "|                                            |\n"
+                + "|                                            |\n"
+                + "|Dica:Eu nunca fui, mas sempre serei. Ninguém|\n"
+                + "|  nunca me viu, e nunca verão. Ainda assim, |\n"
+                + "|  sou a esperança de todos. Quem sou eu?    |\n"
+                + "@~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~@\n");
+        TimeUnit.SECONDS.sleep(5);
+        System.out.println("E agora qual a senha?");
+        charada = input.next();
+        while (!charada.equalsIgnoreCase("futuro")) {
+
+            System.out.println("Não é isso. Tente denovo");
+            System.out.println("Diga-me novamente o que a senha:");
+            charada = input.next();
         }
-}
+        System.out.println("Finalmente você acertou. Parabéns");
+        System.out.println("o portal está se abrindo ...");
+        System.out.println(".\n"
+                + ".\n"
+                + ".\n");
+        System.out.println("O portal se abriu, logo a frente há uma saída. Vá em "
+                + "frente e tente encontrar a Elizabeth e recupere o seu artefato."
+                + ".\n"
+                + ".\n"
+                + ".\n");
+        System.out.println("E para a surpresa de todos, está esfera presente que" + name + " recebeu do rei como recompesa, tem grande propósito!\n"
+                + "Está esfera acumula-se todo o poder da criatura mais poderosa que já existiu na terra... ASTAROTH. A família de Gerald, tem linhagem com os mais antigos bruxos\n"
+                + "de Nochma e já estava previsto que Astaroth estava no reino à procura desta esfera, assim possui-lá e dominar não só Nochma, mas o mundo inteiro!\n"
+                + "Lógico que também preveram que iria chegar um guerreiro corajoso e com o coração puro!\n"
+                + "Que a único intuito deste guerreiro é prosperidade em todos os reinos, mas nada.\n"
+                + "[Elizabeth - Bruxa] - " + name + " Você chegou até aqui e isso está mais do que provado, que seu destino é derrotar Astaroth e você se tornar o guerreiro\n"
+                + "mais poderoso de todos os reinos.\n"
+                + "Lembre-se que a sua arma, não foi ganhada em vão...\n"
+                + ".\n"
+                + ".\n"
+                + ".\n"
+                + "Chegou a hora de lutar com Astaroth!\n"
+                + ".\n"
+                + ".\n"
+                + ".\n");
+        System.out.println("Luta com astaroth");
+        switch (name) {
+            case "Anna":
+                dueloFinal.dueloAnna(60, 1000);
+                break;
+            case "Floki":
+                dueloFinal.dueloFloki(60, 1000);
+                break;
+            case "Harolc":
+                dueloFinal.dueloHalroc(60, 1000);
+                break;
+            case "Yruan":
+                dueloFinal.dueloYruan(60, 1000);
+                break;
+            case "Yvenna":
+                dueloFinal.dueloYvenna(60, 1000);
+                break;
+        }
+        System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!\n"
+                + ".\n"
+                + ".\n"
+                + ".\n");
+        System.out.println("\n [Astaroth] - VOCÊ É INUTIL, NÃO SERVE NEM PARA UMA BOA BATALHA!");
+        System.out.println("[Elizabeth] " + name + " está fraca, é necessário fazer uma magia para que fique mais forte e consiga derrotar Astaroth!\n"
+                + "através das forças das bruxas da família, vou deixa-lo mais forte para conseguir derrotar Astaroth."
+                + ".\n"
+                + ".\n"
+                + ".\n");
+        switch (name) {
+            case "Anna":
+                dueloFinal2.dueloAnnaFinal(1250, 1000);
+                break;
+            case "Floki":
+                dueloFinal2.dueloFlokiFinal(1256, 1000);
+                break;
+            case "Harolc":
+                dueloFinal2.dueloHalrocFinal(1300, 1000);
+                break;
+            case "Yruan":
+                dueloFinal2.dueloYruanFinal(1367, 1000);
+                break;
+            case "Yvenna":
+                dueloFinal2.dueloYvennaFinal(1232, 1000);
+                break;
+        }
+    }
 }
